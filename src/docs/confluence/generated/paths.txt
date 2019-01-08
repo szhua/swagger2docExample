@@ -1,0 +1,10894 @@
+
+h2. 资源 {anchor:paths}
+
+h3. About-us-api {anchor:about-us-api_resource}
+关于我们
+
+
+h4. 关于我们内容 {anchor:getcontentusingpost}
+{noformat}
+POST /aboutUs/getContent
+{noformat}
+
+
+h5. 说明
+关于我们内容
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/aboutUs/getContent
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Ad-api {anchor:ad-api_resource}
+地址相关
+
+
+h4. ads {anchor:findadsusingpost}
+{noformat}
+POST /adApi/ads
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/adApi/ads
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "type" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Address-api {anchor:address-api_resource}
+地址相关
+
+
+h4. 修改或者添加收货地址 {anchor:addorupdateaddressusingpost}
+{noformat}
+POST /AddresApi/addOrUpdateMailAddress
+{noformat}
+
+
+h5. 说明
+修改或者添加收货地址
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*areaId*\\ \\ _可选_||areaId||integer (int64)|
+|*Query*|*cityId*\\ \\ _可选_||cityId||integer (int64)|
+|*Query*|*detailAddress*\\ \\ _可选_||detailAddress||string|
+|*Query*|*id*\\ \\ _可选_||id||integer (int64)|
+|*Query*|*phone*\\ \\ _可选_||phone||string|
+|*Query*|*provinceId*\\ \\ _可选_||provinceId||integer (int64)|
+|*Query*|*receiveName*\\ \\ _可选_||receiveName||string|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/AddresApi/addOrUpdateMailAddress
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "areaId" : 0,
+  "cityId" : 0,
+  "detailAddress" : "string",
+  "id" : 0,
+  "phone" : "string",
+  "provinceId" : 0,
+  "receiveName" : "string",
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获取收货地址 {anchor:getmailaddressusingpost}
+{noformat}
+POST /AddresApi/getMailAddress
+{noformat}
+
+
+h5. 说明
+获取收货地址
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/AddresApi/getMailAddress
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Area-api {anchor:area-api_resource}
+地区相关
+
+
+h4. findAreaByCityId {anchor:findareabycityidusingpost}
+{noformat}
+POST /area/findAreaByCityId
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*id*\\ \\ _可选_||id||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/area/findAreaByCityId
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "id" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. findAreaById {anchor:findareabyidusingpost}
+{noformat}
+POST /area/findAreaById
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*id*\\ \\ _可选_||id||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/area/findAreaById
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "id" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. findCityById {anchor:findcitybyidusingpost}
+{noformat}
+POST /area/findCityById
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*id*\\ \\ _可选_||id||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/area/findCityById
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "id" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. findCitysByProviceId {anchor:findcitysbyproviceidusingpost}
+{noformat}
+POST /area/findCitysByProviceId
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*id*\\ \\ _可选_||id||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/area/findCitysByProviceId
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "id" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. findOrders {anchor:findordersusingpost}
+{noformat}
+POST /area/findOrders
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*schoolId*\\ \\ _可选_||schoolId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult«AppUserOrder»|#ddcbc4d95d389c473ed78795180271b6]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/area/findOrders
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0,
+  "schoolId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ {
+    "appUserAccount" : {
+      "accumulatePoints" : 0,
+      "goldCoins" : 0,
+      "id" : 0
+    },
+    "changeNum" : 0,
+    "createDate" : "string",
+    "des" : "string",
+    "id" : 0,
+    "personalLearnBook" : {
+      "appUserNumber" : 0,
+      "boughtTime" : "string",
+      "buy" : true,
+      "currentLeftWords" : "string",
+      "currentUnitFinished" : true,
+      "currentUnitName" : "string",
+      "currentWord" : 0,
+      "currentWordNum" : 0,
+      "currnetWordname" : "string",
+      "extractPoints" : "string",
+      "freeBoughtTime" : "string",
+      "id" : 0,
+      "isCurrentBook" : 0,
+      "isFinished" : 0,
+      "isPassed" : 0,
+      "isPreTested" : 0,
+      "lastTestTime" : "string",
+      "learnAfterScore" : "string",
+      "learnBeforeScore" : "string",
+      "learnBook" : {
+        "bookName" : "string",
+        "createTime" : "string",
+        "downLoadNum" : 0,
+        "download" : 0,
+        "grade" : "string",
+        "id" : 0,
+        "imgUrl" : "string",
+        "price" : 0,
+        "stage" : "string",
+        "updateTime" : "string",
+        "version" : "string",
+        "wordsNum" : 0
+      },
+      "learnedWords" : "string",
+      "preScore" : 0,
+      "score" : 0,
+      "teacherSuggest" : "string",
+      "totalWordNum" : 0,
+      "unitId" : 0,
+      "unitWordProgress" : 0,
+      "valiable" : true
+    },
+    "redeemCode" : {
+      "activeTime" : "string",
+      "codeMoney" : 0,
+      "codeNum" : "string",
+      "createTime" : "string",
+      "des" : "string",
+      "id" : 0,
+      "school" : {
+        "LAY_CHECKED" : true,
+        "address" : "string",
+        "agents" : {
+          "address" : "string",
+          "areaId" : 0,
+          "birthDay" : "string",
+          "cityId" : 0,
+          "detailAddress" : "string",
+          "email" : "string",
+          "headerImgUrl" : "string",
+          "id" : 0,
+          "name" : "string",
+          "phone" : "string",
+          "provinceId" : 0,
+          "registerDate" : "string",
+          "sex" : 0,
+          "user" : {
+            "createTiem" : "string",
+            "id" : 0,
+            "loginName" : "string",
+            "name" : "string",
+            "passWord" : "string",
+            "roles" : [ {
+              "id" : 0,
+              "permissionIds" : "string",
+              "permissions" : [ {
+                "LAY_CHECKED" : true,
+                "dataPath" : "string",
+                "hasChild" : 0,
+                "icon" : "string",
+                "id" : 0,
+                "lay_CHECKED" : true,
+                "menuId" : 0,
+                "parentId" : 0,
+                "permissonName" : "string",
+                "powerList" : [ {
+                  "LAY_CHECKED" : true,
+                  "dataPath" : "string",
+                  "hasChild" : 0,
+                  "icon" : "string",
+                  "id" : 0,
+                  "lay_CHECKED" : true,
+                  "menuId" : 0,
+                  "parentId" : 0,
+                  "permissonName" : "string",
+                  "powerList" : [ "..." ],
+                  "powerMenuName" : "string",
+                  "powerName" : "string",
+                  "powerUrl" : "string",
+                  "roles" : [ {
+                    "id" : 0,
+                    "permissionIds" : "string",
+                    "permissions" : [ "..." ],
+                    "roleName" : "string"
+                  } ]
+                } ],
+                "powerMenuName" : "string",
+                "powerName" : "string",
+                "powerUrl" : "string",
+                "roles" : [ {
+                  "id" : 0,
+                  "permissionIds" : "string",
+                  "permissions" : [ "..." ],
+                  "roleName" : "string"
+                } ]
+              } ],
+              "roleName" : "string"
+            } ],
+            "rolesIds" : "string"
+          }
+        },
+        "areaId" : 0,
+        "city" : "string",
+        "cityId" : 0,
+        "createTime" : "string",
+        "detailAddress" : "string",
+        "id" : 0,
+        "lay_CHECKED" : true,
+        "masterId" : 0,
+        "mastername" : "string",
+        "name" : "string",
+        "phone" : "string",
+        "province" : "string",
+        "provinceId" : 0,
+        "seven" : 0,
+        "shcoolDes" : "string",
+        "thirty" : 0,
+        "uid" : "string",
+        "userNumber" : 0
+      },
+      "state" : 0,
+      "termOfvalidity" : 0,
+      "timeOut" : true,
+      "upLoadUser" : {
+        "createTiem" : "string",
+        "id" : 0,
+        "loginName" : "string",
+        "name" : "string",
+        "passWord" : "string",
+        "roles" : [ {
+          "id" : 0,
+          "permissionIds" : "string",
+          "permissions" : [ "..." ],
+          "roleName" : "string"
+        } ],
+        "rolesIds" : "string"
+      },
+      "user" : {
+        "address" : "string",
+        "appUserAccount" : {
+          "accumulatePoints" : 0,
+          "goldCoins" : 0,
+          "id" : 0
+        },
+        "areaId" : 0,
+        "benginStartTime" : "string",
+        "birthDay" : "string",
+        "booksCount" : 0,
+        "cityId" : 0,
+        "classInSchool" : {
+          "LAY_CHECKED" : true,
+          "addUser" : {
+            "createTiem" : "string",
+            "id" : 0,
+            "loginName" : "string",
+            "name" : "string",
+            "passWord" : "string",
+            "roles" : [ {
+              "id" : 0,
+              "permissionIds" : "string",
+              "permissions" : [ "..." ],
+              "roleName" : "string"
+            } ],
+            "rolesIds" : "string"
+          },
+          "classInfo" : "string",
+          "createTime" : "string",
+          "headMaster" : "string",
+          "id" : 0,
+          "lay_CHECKED" : true,
+          "name" : "string",
+          "school" : {
+            "LAY_CHECKED" : true,
+            "address" : "string",
+            "agents" : {
+              "address" : "string",
+              "areaId" : 0,
+              "birthDay" : "string",
+              "cityId" : 0,
+              "detailAddress" : "string",
+              "email" : "string",
+              "headerImgUrl" : "string",
+              "id" : 0,
+              "name" : "string",
+              "phone" : "string",
+              "provinceId" : 0,
+              "registerDate" : "string",
+              "sex" : 0,
+              "user" : {
+                "createTiem" : "string",
+                "id" : 0,
+                "loginName" : "string",
+                "name" : "string",
+                "passWord" : "string",
+                "roles" : [ {
+                  "id" : 0,
+                  "permissionIds" : "string",
+                  "permissions" : [ "..." ],
+                  "roleName" : "string"
+                } ],
+                "rolesIds" : "string"
+              }
+            },
+            "areaId" : 0,
+            "city" : "string",
+            "cityId" : 0,
+            "createTime" : "string",
+            "detailAddress" : "string",
+            "id" : 0,
+            "lay_CHECKED" : true,
+            "masterId" : 0,
+            "mastername" : "string",
+            "name" : "string",
+            "phone" : "string",
+            "province" : "string",
+            "provinceId" : 0,
+            "seven" : 0,
+            "shcoolDes" : "string",
+            "thirty" : 0,
+            "uid" : "string",
+            "userNumber" : 0
+          },
+          "studentNum" : 0,
+          "withInSevenNUm" : 0,
+          "withInTwoNum" : 0
+        },
+        "classInSchoolId" : 0,
+        "hasCompeltedInfo" : true,
+        "id" : 0,
+        "imgUrl" : "string",
+        "isBatchCreate" : 0,
+        "lastSignTime" : "string",
+        "learnBookWords" : "string",
+        "learnTime" : 0,
+        "level" : "string",
+        "name" : "string",
+        "newWordNum" : 0,
+        "number1" : "string",
+        "number2" : "string",
+        "pass64" : "string",
+        "password" : "string",
+        "phoneForInfo" : "string",
+        "phoneNum" : "string",
+        "provinceId" : 0,
+        "punchCardsDays" : 0,
+        "qqNickName" : "string",
+        "qqNumber" : "string",
+        "qqOpenId" : "string",
+        "realNameForInfo" : "string",
+        "registerDate" : "string",
+        "schoolId" : "string",
+        "schoolName" : "string",
+        "sex" : 0,
+        "sign" : "string",
+        "standardDay" : 0,
+        "teacher" : "string",
+        "thirdImgUrl" : "string",
+        "thirdNickName" : "string",
+        "todayStudyTime" : "string",
+        "totalNewOnlineTime" : "string",
+        "totalNewVolidTime" : "string",
+        "totalStudyTime" : "string",
+        "uid" : "string",
+        "wechatNickName" : "string",
+        "wechatNum" : "string",
+        "wechatOpenId" : "string",
+        "weiboNickName" : "string",
+        "weiboNumber" : "string",
+        "weiboOpenId" : "string",
+        "wordNum" : 0,
+        "wordsNumReview" : 0
+      }
+    },
+    "relatedId" : 0,
+    "title" : "string",
+    "type" : 0
+  } ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. findProvinces {anchor:findprovincesusingpost}
+{noformat}
+POST /area/findProvinces
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/area/findProvinces
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. getProvince {anchor:getprovinceusingpost}
+{noformat}
+POST /area/getProvince
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*id*\\ \\ _可选_||id||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/area/getProvince
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "id" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Book-api {anchor:book-api_resource}
+课本相关
+
+
+h4. agentsSellsInfo {anchor:agentssellsinfousingpost}
+{noformat}
+POST /bookApi/agentsSellsInfo
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*classId*\\ \\ _可选_||classId||integer (int64)|
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*schoolId*\\ \\ _可选_||schoolId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[LayPageResult«AppUserShowInfoBean»|#64208abcc996c5e1c6ddd01700043576]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/bookApi/agentsSellsInfo
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "classId" : 0,
+  "limit" : 0,
+  "page" : 0,
+  "schoolId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "code" : 0,
+  "count" : 0,
+  "data" : [ {
+    "bookTestInfos" : [ {
+      "bookId" : 0,
+      "bookName" : "string",
+      "isPre" : 0,
+      "score" : 0,
+      "testDate" : "string"
+    } ],
+    "books" : {
+      "string" : "string"
+    },
+    "classId" : 0,
+    "className" : "string",
+    "countBooks" : 0,
+    "currentBookName" : "string",
+    "currentUnit" : "string",
+    "currentWord" : "string",
+    "currentWordName" : "string",
+    "progress" : "string",
+    "schoolId" : 0,
+    "schoolName" : "string",
+    "theLatesdScore" : 0,
+    "unitTestInfos" : [ {
+      "isPre" : 0,
+      "score" : 0,
+      "testtime" : "string",
+      "unitName" : "string",
+      "unitid" : 0
+    } ],
+    "userId" : 0,
+    "userName" : "string"
+  } ],
+  "msg" : "string"
+}
+{code}
+
+
+h4. 获得课本列表 {anchor:findallbookswihtuserusingpost}
+{noformat}
+POST /bookApi/findAllBooksWihtUser
+{noformat}
+
+
+h5. 说明
+获得课本列表
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*stage*\\ \\ _可选_||stage||string|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+|*Query*|*version*\\ \\ _可选_||version||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/bookApi/findAllBooksWihtUser
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "stage" : "string",
+  "userId" : 0,
+  "version" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得课本列表 {anchor:findunitsbybookidusingpost}
+{noformat}
+POST /bookApi/findBookUnits
+{noformat}
+
+
+h5. 说明
+获得课本列表
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/bookApi/findBookUnits
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得所有的阶段 {anchor:getallstageusingpost}
+{noformat}
+POST /bookApi/getAllStage
+{noformat}
+
+
+h5. 说明
+获得所有的阶段
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/bookApi/getAllStage
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 根据阶段获得版本 {anchor:getversionsusingpost}
+{noformat}
+POST /bookApi/getVersions
+{noformat}
+
+
+h5. 说明
+根据阶段获得版本
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*stage*\\ \\ _可选_||stage||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/bookApi/getVersions
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "stage" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Error-recovery-api {anchor:error-recovery-api_resource}
+纠错
+
+
+h4. 纠错 {anchor:errorrecoveryusingpost}
+{noformat}
+POST /ErrorRecoveryApi/errorRecovery
+{noformat}
+
+
+h5. 说明
+纠错
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*des*\\ \\ _可选_||des||string|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+|*Query*|*wordId*\\ \\ _可选_||wordId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/ErrorRecoveryApi/errorRecovery
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "des" : "string",
+  "userId" : 0,
+  "wordId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 纠错图片上传 {anchor:errorrecoveryimgusingpost}
+{noformat}
+POST /ErrorRecoveryApi/errorRecoveryImg
+{noformat}
+
+
+h5. 说明
+纠错图片上传
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+|*FormData*|*img*\\ \\ _可选_||img||file|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}multipart/form-data{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/ErrorRecoveryApi/errorRecoveryImg
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h6. 请求 formData
+{code:language=json}
+"file"
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得纠错的集合 {anchor:geterrorusingpost}
+{noformat}
+POST /ErrorRecoveryApi/getErrors
+{noformat}
+
+
+h5. 说明
+获得纠错的集合
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*resolved*\\ \\ _可选_||resolved||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult«ErrorRecovery»|#181331583bf47447985b7ae4b1619941]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/ErrorRecoveryApi/getErrors
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0,
+  "resolved" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ {
+    "appUser" : {
+      "address" : "string",
+      "appUserAccount" : {
+        "accumulatePoints" : 0,
+        "goldCoins" : 0,
+        "id" : 0
+      },
+      "areaId" : 0,
+      "benginStartTime" : "string",
+      "birthDay" : "string",
+      "booksCount" : 0,
+      "cityId" : 0,
+      "classInSchool" : {
+        "LAY_CHECKED" : true,
+        "addUser" : {
+          "createTiem" : "string",
+          "id" : 0,
+          "loginName" : "string",
+          "name" : "string",
+          "passWord" : "string",
+          "roles" : [ {
+            "id" : 0,
+            "permissionIds" : "string",
+            "permissions" : [ {
+              "LAY_CHECKED" : true,
+              "dataPath" : "string",
+              "hasChild" : 0,
+              "icon" : "string",
+              "id" : 0,
+              "lay_CHECKED" : true,
+              "menuId" : 0,
+              "parentId" : 0,
+              "permissonName" : "string",
+              "powerList" : [ {
+                "LAY_CHECKED" : true,
+                "dataPath" : "string",
+                "hasChild" : 0,
+                "icon" : "string",
+                "id" : 0,
+                "lay_CHECKED" : true,
+                "menuId" : 0,
+                "parentId" : 0,
+                "permissonName" : "string",
+                "powerList" : [ "..." ],
+                "powerMenuName" : "string",
+                "powerName" : "string",
+                "powerUrl" : "string",
+                "roles" : [ {
+                  "id" : 0,
+                  "permissionIds" : "string",
+                  "permissions" : [ "..." ],
+                  "roleName" : "string"
+                } ]
+              } ],
+              "powerMenuName" : "string",
+              "powerName" : "string",
+              "powerUrl" : "string",
+              "roles" : [ {
+                "id" : 0,
+                "permissionIds" : "string",
+                "permissions" : [ "..." ],
+                "roleName" : "string"
+              } ]
+            } ],
+            "roleName" : "string"
+          } ],
+          "rolesIds" : "string"
+        },
+        "classInfo" : "string",
+        "createTime" : "string",
+        "headMaster" : "string",
+        "id" : 0,
+        "lay_CHECKED" : true,
+        "name" : "string",
+        "school" : {
+          "LAY_CHECKED" : true,
+          "address" : "string",
+          "agents" : {
+            "address" : "string",
+            "areaId" : 0,
+            "birthDay" : "string",
+            "cityId" : 0,
+            "detailAddress" : "string",
+            "email" : "string",
+            "headerImgUrl" : "string",
+            "id" : 0,
+            "name" : "string",
+            "phone" : "string",
+            "provinceId" : 0,
+            "registerDate" : "string",
+            "sex" : 0,
+            "user" : {
+              "createTiem" : "string",
+              "id" : 0,
+              "loginName" : "string",
+              "name" : "string",
+              "passWord" : "string",
+              "roles" : [ {
+                "id" : 0,
+                "permissionIds" : "string",
+                "permissions" : [ "..." ],
+                "roleName" : "string"
+              } ],
+              "rolesIds" : "string"
+            }
+          },
+          "areaId" : 0,
+          "city" : "string",
+          "cityId" : 0,
+          "createTime" : "string",
+          "detailAddress" : "string",
+          "id" : 0,
+          "lay_CHECKED" : true,
+          "masterId" : 0,
+          "mastername" : "string",
+          "name" : "string",
+          "phone" : "string",
+          "province" : "string",
+          "provinceId" : 0,
+          "seven" : 0,
+          "shcoolDes" : "string",
+          "thirty" : 0,
+          "uid" : "string",
+          "userNumber" : 0
+        },
+        "studentNum" : 0,
+        "withInSevenNUm" : 0,
+        "withInTwoNum" : 0
+      },
+      "classInSchoolId" : 0,
+      "hasCompeltedInfo" : true,
+      "id" : 0,
+      "imgUrl" : "string",
+      "isBatchCreate" : 0,
+      "lastSignTime" : "string",
+      "learnBookWords" : "string",
+      "learnTime" : 0,
+      "level" : "string",
+      "name" : "string",
+      "newWordNum" : 0,
+      "number1" : "string",
+      "number2" : "string",
+      "pass64" : "string",
+      "password" : "string",
+      "phoneForInfo" : "string",
+      "phoneNum" : "string",
+      "provinceId" : 0,
+      "punchCardsDays" : 0,
+      "qqNickName" : "string",
+      "qqNumber" : "string",
+      "qqOpenId" : "string",
+      "realNameForInfo" : "string",
+      "registerDate" : "string",
+      "schoolId" : "string",
+      "schoolName" : "string",
+      "sex" : 0,
+      "sign" : "string",
+      "standardDay" : 0,
+      "teacher" : "string",
+      "thirdImgUrl" : "string",
+      "thirdNickName" : "string",
+      "todayStudyTime" : "string",
+      "totalNewOnlineTime" : "string",
+      "totalNewVolidTime" : "string",
+      "totalStudyTime" : "string",
+      "uid" : "string",
+      "wechatNickName" : "string",
+      "wechatNum" : "string",
+      "wechatOpenId" : "string",
+      "weiboNickName" : "string",
+      "weiboNumber" : "string",
+      "weiboOpenId" : "string",
+      "wordNum" : 0,
+      "wordsNumReview" : 0
+    },
+    "bookWord" : {
+      "aboutWords" : "string",
+      "assistantNotation" : "string",
+      "bookName" : "string",
+      "englishExample1" : "string",
+      "englishExample2" : "string",
+      "exampleTranslation1" : "string",
+      "exampleTranslation2" : "string",
+      "id" : 0,
+      "interpretation" : "string",
+      "is_right" : true,
+      "learnBook" : {
+        "bookName" : "string",
+        "createTime" : "string",
+        "downLoadNum" : 0,
+        "download" : 0,
+        "grade" : "string",
+        "id" : 0,
+        "imgUrl" : "string",
+        "price" : 0,
+        "stage" : "string",
+        "updateTime" : "string",
+        "version" : "string",
+        "wordsNum" : 0
+      },
+      "right" : true,
+      "rootAffixes" : "string",
+      "spare1" : "string",
+      "spare2" : "string",
+      "stage" : "string",
+      "unit" : {
+        "id" : 0,
+        "learnBook" : {
+          "bookName" : "string",
+          "createTime" : "string",
+          "downLoadNum" : 0,
+          "download" : 0,
+          "grade" : "string",
+          "id" : 0,
+          "imgUrl" : "string",
+          "price" : 0,
+          "stage" : "string",
+          "updateTime" : "string",
+          "version" : "string",
+          "wordsNum" : 0
+        },
+        "name" : "string",
+        "passTime" : "string",
+        "testScore" : 0,
+        "testTime" : "string",
+        "unitTestStart" : "string",
+        "unitTypeNumber1" : "string",
+        "unitTypeNumber2" : "string",
+        "unitTypeNumber4" : "string",
+        "unitTypeNumber5" : "string",
+        "unitTypeNumber6" : "string"
+      },
+      "unitName" : "string",
+      "version" : "string",
+      "word" : {
+        "aboutWords" : "string",
+        "americanPronunciation" : "string",
+        "assistantNotation" : "string",
+        "englishExample1" : "string",
+        "englishExample2" : "string",
+        "englishPronunciation" : "string",
+        "exampleTranslation1" : "string",
+        "exampleTranslation2" : "string",
+        "id" : 0,
+        "interpretation" : "string",
+        "phonetic_symbol" : "string",
+        "rootAffixes" : "string",
+        "spare1" : "string",
+        "spare2" : "string",
+        "syllabification" : "string",
+        "usaAudioUrl" : "string",
+        "word" : "string",
+        "wordAudioUrl" : "string"
+      },
+      "wordName" : "string"
+    },
+    "createTime" : "string",
+    "des" : "string",
+    "id" : 0,
+    "imgUrl" : "string",
+    "isResolved" : 0,
+    "reply" : "string",
+    "resolvedTime" : "string",
+    "user" : {
+      "createTiem" : "string",
+      "id" : 0,
+      "loginName" : "string",
+      "name" : "string",
+      "passWord" : "string",
+      "roles" : [ {
+        "id" : 0,
+        "permissionIds" : "string",
+        "permissions" : [ "..." ],
+        "roleName" : "string"
+      } ],
+      "rolesIds" : "string"
+    }
+  } ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Excel-api {anchor:excel-api_resource}
+Excel Api
+
+
+h4. downLoad {anchor:downloadusingpost}
+{noformat}
+POST /excel/downLoad
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||object|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/excel/downLoad
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+"object"
+{code}
+
+
+h3. Feed-back-api {anchor:feed-back-api_resource}
+反馈相关的API
+
+
+h4. addFeedback {anchor:addfeedbackusingpost}
+{noformat}
+POST /feedback/addFeedBack
+{noformat}
+
+
+h5. 说明
+添加反馈
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*content*\\ \\ _可选_||content||string|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+|*FormData*|*file1*\\ \\ _可选_||file1||file|
+|*FormData*|*file2*\\ \\ _可选_||file2||file|
+|*FormData*|*file3*\\ \\ _可选_||file3||file|
+|*FormData*|*file4*\\ \\ _可选_||file4||file|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}multipart/form-data{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/feedback/addFeedBack
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "content" : "string",
+  "userId" : 0
+}
+{code}
+
+
+h6. 请求 formData
+{code:language=json}
+"file"
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 反馈列表 {anchor:findfeedbacksusingpost}
+{noformat}
+POST /feedback/feedBackList
+{noformat}
+
+
+h5. 说明
+反馈列表
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult«FeedBack»|#e59783b7b397fc05ce23c7bd8fbd7408]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/feedback/feedBackList
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ {
+    "answerContent" : "string",
+    "answerTiem" : "string",
+    "answerUser" : {
+      "createTiem" : "string",
+      "id" : 0,
+      "loginName" : "string",
+      "name" : "string",
+      "passWord" : "string",
+      "roles" : [ {
+        "id" : 0,
+        "permissionIds" : "string",
+        "permissions" : [ {
+          "LAY_CHECKED" : true,
+          "dataPath" : "string",
+          "hasChild" : 0,
+          "icon" : "string",
+          "id" : 0,
+          "lay_CHECKED" : true,
+          "menuId" : 0,
+          "parentId" : 0,
+          "permissonName" : "string",
+          "powerList" : [ {
+            "LAY_CHECKED" : true,
+            "dataPath" : "string",
+            "hasChild" : 0,
+            "icon" : "string",
+            "id" : 0,
+            "lay_CHECKED" : true,
+            "menuId" : 0,
+            "parentId" : 0,
+            "permissonName" : "string",
+            "powerList" : [ "..." ],
+            "powerMenuName" : "string",
+            "powerName" : "string",
+            "powerUrl" : "string",
+            "roles" : [ {
+              "id" : 0,
+              "permissionIds" : "string",
+              "permissions" : [ "..." ],
+              "roleName" : "string"
+            } ]
+          } ],
+          "powerMenuName" : "string",
+          "powerName" : "string",
+          "powerUrl" : "string",
+          "roles" : [ {
+            "id" : 0,
+            "permissionIds" : "string",
+            "permissions" : [ "..." ],
+            "roleName" : "string"
+          } ]
+        } ],
+        "roleName" : "string"
+      } ],
+      "rolesIds" : "string"
+    },
+    "askTime" : "string",
+    "askUser" : {
+      "address" : "string",
+      "appUserAccount" : {
+        "accumulatePoints" : 0,
+        "goldCoins" : 0,
+        "id" : 0
+      },
+      "areaId" : 0,
+      "benginStartTime" : "string",
+      "birthDay" : "string",
+      "booksCount" : 0,
+      "cityId" : 0,
+      "classInSchool" : {
+        "LAY_CHECKED" : true,
+        "addUser" : {
+          "createTiem" : "string",
+          "id" : 0,
+          "loginName" : "string",
+          "name" : "string",
+          "passWord" : "string",
+          "roles" : [ {
+            "id" : 0,
+            "permissionIds" : "string",
+            "permissions" : [ "..." ],
+            "roleName" : "string"
+          } ],
+          "rolesIds" : "string"
+        },
+        "classInfo" : "string",
+        "createTime" : "string",
+        "headMaster" : "string",
+        "id" : 0,
+        "lay_CHECKED" : true,
+        "name" : "string",
+        "school" : {
+          "LAY_CHECKED" : true,
+          "address" : "string",
+          "agents" : {
+            "address" : "string",
+            "areaId" : 0,
+            "birthDay" : "string",
+            "cityId" : 0,
+            "detailAddress" : "string",
+            "email" : "string",
+            "headerImgUrl" : "string",
+            "id" : 0,
+            "name" : "string",
+            "phone" : "string",
+            "provinceId" : 0,
+            "registerDate" : "string",
+            "sex" : 0,
+            "user" : {
+              "createTiem" : "string",
+              "id" : 0,
+              "loginName" : "string",
+              "name" : "string",
+              "passWord" : "string",
+              "roles" : [ {
+                "id" : 0,
+                "permissionIds" : "string",
+                "permissions" : [ "..." ],
+                "roleName" : "string"
+              } ],
+              "rolesIds" : "string"
+            }
+          },
+          "areaId" : 0,
+          "city" : "string",
+          "cityId" : 0,
+          "createTime" : "string",
+          "detailAddress" : "string",
+          "id" : 0,
+          "lay_CHECKED" : true,
+          "masterId" : 0,
+          "mastername" : "string",
+          "name" : "string",
+          "phone" : "string",
+          "province" : "string",
+          "provinceId" : 0,
+          "seven" : 0,
+          "shcoolDes" : "string",
+          "thirty" : 0,
+          "uid" : "string",
+          "userNumber" : 0
+        },
+        "studentNum" : 0,
+        "withInSevenNUm" : 0,
+        "withInTwoNum" : 0
+      },
+      "classInSchoolId" : 0,
+      "hasCompeltedInfo" : true,
+      "id" : 0,
+      "imgUrl" : "string",
+      "isBatchCreate" : 0,
+      "lastSignTime" : "string",
+      "learnBookWords" : "string",
+      "learnTime" : 0,
+      "level" : "string",
+      "name" : "string",
+      "newWordNum" : 0,
+      "number1" : "string",
+      "number2" : "string",
+      "pass64" : "string",
+      "password" : "string",
+      "phoneForInfo" : "string",
+      "phoneNum" : "string",
+      "provinceId" : 0,
+      "punchCardsDays" : 0,
+      "qqNickName" : "string",
+      "qqNumber" : "string",
+      "qqOpenId" : "string",
+      "realNameForInfo" : "string",
+      "registerDate" : "string",
+      "schoolId" : "string",
+      "schoolName" : "string",
+      "sex" : 0,
+      "sign" : "string",
+      "standardDay" : 0,
+      "teacher" : "string",
+      "thirdImgUrl" : "string",
+      "thirdNickName" : "string",
+      "todayStudyTime" : "string",
+      "totalNewOnlineTime" : "string",
+      "totalNewVolidTime" : "string",
+      "totalStudyTime" : "string",
+      "uid" : "string",
+      "wechatNickName" : "string",
+      "wechatNum" : "string",
+      "wechatOpenId" : "string",
+      "weiboNickName" : "string",
+      "weiboNumber" : "string",
+      "weiboOpenId" : "string",
+      "wordNum" : 0,
+      "wordsNumReview" : 0
+    },
+    "content" : "string",
+    "id" : 0,
+    "ifSolve" : 0,
+    "imageInDbForCacheList" : [ {
+      "createDate" : "string",
+      "id" : 0,
+      "imgName" : "string",
+      "imgUrl" : "string",
+      "size" : 0
+    } ]
+  } ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 反馈详情 {anchor:findfeedbackdetailusingpost}
+{noformat}
+POST /feedback/feedDetail
+{noformat}
+
+
+h5. 说明
+反馈详情
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*id*\\ \\ _可选_||id||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/feedback/feedDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "id" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Good-teaches-api {anchor:good-teaches-api_resource}
+Good Teaches Api
+
+
+h4. count {anchor:countusingpost}
+{noformat}
+POST /goodTeaches/count
+{noformat}
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/goodTeaches/count
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. getGoodTeaches {anchor:getgoodteachesusingpost}
+{noformat}
+POST /goodTeaches/data_list
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult«GoodTeaches»|#5bd4ad597fc3b695376bfa5c1379c739]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/goodTeaches/data_list
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ {
+    "id" : 0,
+    "imgUrl" : "string",
+    "isBought" : 0,
+    "score" : 0.0,
+    "teacherDes" : "string",
+    "teacherName" : "string",
+    "title" : "string",
+    "url" : "string",
+    "wathNum" : 0
+  } ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Help-api {anchor:help-api_resource}
+帮助相关
+
+
+h4. 获得帮助详情 {anchor:findhelpdetailusingpost}
+{noformat}
+POST /help/getHelpDetail
+{noformat}
+
+
+h5. 说明
+获得帮助详情
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*id*\\ \\ _可选_||id||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/help/getHelpDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "id" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得帮助列表 {anchor:gethelplistusingpost}
+{noformat}
+POST /help/getHelpList
+{noformat}
+
+
+h5. 说明
+获得帮助列表
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/help/getHelpList
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Integral-api {anchor:integral-api_resource}
+积分相关
+
+
+h4. 积分的来源和使用说明 {anchor:getintegraldesusingpost}
+{noformat}
+POST /Integral/getIntegralDes
+{noformat}
+
+
+h5. 说明
+积分的来源和使用说明
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/Integral/getIntegralDes
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人积分明细 {anchor:getpersonalintegraldetailusingpost}
+{noformat}
+POST /Integral/getPersonalIntegralDetail
+{noformat}
+
+
+h5. 说明
+获得个人积分明细
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult|#pageapiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/Integral/getPersonalIntegralDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "limit" : 0,
+  "page" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ "object" ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得用户积分 {anchor:getuserintegralusingpost}
+{noformat}
+POST /Integral/getUserIntegral
+{noformat}
+
+
+h5. 说明
+获得用户积分
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/Integral/getUserIntegral
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Level-api {anchor:level-api_resource}
+级别相关
+
+
+h4. 获取级别 {anchor:getleveldesusingpost}
+{noformat}
+POST /Level/getLevelDes
+{noformat}
+
+
+h5. 说明
+获取级别
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/Level/getLevelDes
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Message-api {anchor:message-api_resource}
+message相关
+
+
+h4. 删除消息 {anchor:deletemessageusingpost}
+{noformat}
+POST /messageApi/deleteMessage
+{noformat}
+
+
+h5. 说明
+删除消息
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*messageId*\\ \\ _可选_||messageId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/deleteMessage
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "messageId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得班级消息未读 {anchor:getclassmessagenotreadedusingpost}
+{noformat}
+POST /messageApi/getClassMessageNotReaded
+{noformat}
+
+
+h5. 说明
+获得班级消息未读
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult|#pageapiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/getClassMessageNotReaded
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ "object" ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得班级消息已读 {anchor:getclassmessagereadedusingpost}
+{noformat}
+POST /messageApi/getClassMessageReaded
+{noformat}
+
+
+h5. 说明
+获得班级消息已读
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult|#pageapiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/getClassMessageReaded
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ "object" ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得消息详情 {anchor:getmessagedetailusingpost}
+{noformat}
+POST /messageApi/getMessageDetail
+{noformat}
+
+
+h5. 说明
+获得消息详情
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*messageId*\\ \\ _可选_||messageId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/getMessageDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "messageId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得系统消息的未读数量 {anchor:getsysmessagecountusingpost}
+{noformat}
+POST /messageApi/getSysMessageCount
+{noformat}
+
+
+h5. 说明
+获得系统消息的未读数量
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/getSysMessageCount
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得系统未读消息 {anchor:getsysmessagenotreadedusingpost}
+{noformat}
+POST /messageApi/getSysMessageNotReaded
+{noformat}
+
+
+h5. 说明
+获得系统未读消息
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult|#pageapiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/getSysMessageNotReaded
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ "object" ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得系统已读消息 {anchor:getsysmessagereadedusingpost}
+{noformat}
+POST /messageApi/getSysMessageReaded
+{noformat}
+
+
+h5. 说明
+获得系统已读消息
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult|#pageapiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/getSysMessageReaded
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ "object" ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得消息列表 {anchor:getmesssgesusingpost}
+{noformat}
+POST /messageApi/getUserMessage
+{noformat}
+
+
+h5. 说明
+获得消息列表
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*isRead*\\ \\ _可选_||isRead||integer (int32)|
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult«MessageRead»|#5c0d4c33855dfb66d81aad86b9bfe6bd]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/getUserMessage
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "isRead" : 0,
+  "limit" : 0,
+  "page" : 0,
+  "type" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ {
+    "appUser" : {
+      "address" : "string",
+      "appUserAccount" : {
+        "accumulatePoints" : 0,
+        "goldCoins" : 0,
+        "id" : 0
+      },
+      "areaId" : 0,
+      "benginStartTime" : "string",
+      "birthDay" : "string",
+      "booksCount" : 0,
+      "cityId" : 0,
+      "classInSchool" : {
+        "LAY_CHECKED" : true,
+        "addUser" : {
+          "createTiem" : "string",
+          "id" : 0,
+          "loginName" : "string",
+          "name" : "string",
+          "passWord" : "string",
+          "roles" : [ {
+            "id" : 0,
+            "permissionIds" : "string",
+            "permissions" : [ {
+              "LAY_CHECKED" : true,
+              "dataPath" : "string",
+              "hasChild" : 0,
+              "icon" : "string",
+              "id" : 0,
+              "lay_CHECKED" : true,
+              "menuId" : 0,
+              "parentId" : 0,
+              "permissonName" : "string",
+              "powerList" : [ {
+                "LAY_CHECKED" : true,
+                "dataPath" : "string",
+                "hasChild" : 0,
+                "icon" : "string",
+                "id" : 0,
+                "lay_CHECKED" : true,
+                "menuId" : 0,
+                "parentId" : 0,
+                "permissonName" : "string",
+                "powerList" : [ "..." ],
+                "powerMenuName" : "string",
+                "powerName" : "string",
+                "powerUrl" : "string",
+                "roles" : [ {
+                  "id" : 0,
+                  "permissionIds" : "string",
+                  "permissions" : [ "..." ],
+                  "roleName" : "string"
+                } ]
+              } ],
+              "powerMenuName" : "string",
+              "powerName" : "string",
+              "powerUrl" : "string",
+              "roles" : [ {
+                "id" : 0,
+                "permissionIds" : "string",
+                "permissions" : [ "..." ],
+                "roleName" : "string"
+              } ]
+            } ],
+            "roleName" : "string"
+          } ],
+          "rolesIds" : "string"
+        },
+        "classInfo" : "string",
+        "createTime" : "string",
+        "headMaster" : "string",
+        "id" : 0,
+        "lay_CHECKED" : true,
+        "name" : "string",
+        "school" : {
+          "LAY_CHECKED" : true,
+          "address" : "string",
+          "agents" : {
+            "address" : "string",
+            "areaId" : 0,
+            "birthDay" : "string",
+            "cityId" : 0,
+            "detailAddress" : "string",
+            "email" : "string",
+            "headerImgUrl" : "string",
+            "id" : 0,
+            "name" : "string",
+            "phone" : "string",
+            "provinceId" : 0,
+            "registerDate" : "string",
+            "sex" : 0,
+            "user" : {
+              "createTiem" : "string",
+              "id" : 0,
+              "loginName" : "string",
+              "name" : "string",
+              "passWord" : "string",
+              "roles" : [ {
+                "id" : 0,
+                "permissionIds" : "string",
+                "permissions" : [ "..." ],
+                "roleName" : "string"
+              } ],
+              "rolesIds" : "string"
+            }
+          },
+          "areaId" : 0,
+          "city" : "string",
+          "cityId" : 0,
+          "createTime" : "string",
+          "detailAddress" : "string",
+          "id" : 0,
+          "lay_CHECKED" : true,
+          "masterId" : 0,
+          "mastername" : "string",
+          "name" : "string",
+          "phone" : "string",
+          "province" : "string",
+          "provinceId" : 0,
+          "seven" : 0,
+          "shcoolDes" : "string",
+          "thirty" : 0,
+          "uid" : "string",
+          "userNumber" : 0
+        },
+        "studentNum" : 0,
+        "withInSevenNUm" : 0,
+        "withInTwoNum" : 0
+      },
+      "classInSchoolId" : 0,
+      "hasCompeltedInfo" : true,
+      "id" : 0,
+      "imgUrl" : "string",
+      "isBatchCreate" : 0,
+      "lastSignTime" : "string",
+      "learnBookWords" : "string",
+      "learnTime" : 0,
+      "level" : "string",
+      "name" : "string",
+      "newWordNum" : 0,
+      "number1" : "string",
+      "number2" : "string",
+      "pass64" : "string",
+      "password" : "string",
+      "phoneForInfo" : "string",
+      "phoneNum" : "string",
+      "provinceId" : 0,
+      "punchCardsDays" : 0,
+      "qqNickName" : "string",
+      "qqNumber" : "string",
+      "qqOpenId" : "string",
+      "realNameForInfo" : "string",
+      "registerDate" : "string",
+      "schoolId" : "string",
+      "schoolName" : "string",
+      "sex" : 0,
+      "sign" : "string",
+      "standardDay" : 0,
+      "teacher" : "string",
+      "thirdImgUrl" : "string",
+      "thirdNickName" : "string",
+      "todayStudyTime" : "string",
+      "totalNewOnlineTime" : "string",
+      "totalNewVolidTime" : "string",
+      "totalStudyTime" : "string",
+      "uid" : "string",
+      "wechatNickName" : "string",
+      "wechatNum" : "string",
+      "wechatOpenId" : "string",
+      "weiboNickName" : "string",
+      "weiboNumber" : "string",
+      "weiboOpenId" : "string",
+      "wordNum" : 0,
+      "wordsNumReview" : 0
+    },
+    "id" : 0,
+    "message" : {
+      "classInSchool" : {
+        "LAY_CHECKED" : true,
+        "addUser" : {
+          "createTiem" : "string",
+          "id" : 0,
+          "loginName" : "string",
+          "name" : "string",
+          "passWord" : "string",
+          "roles" : [ {
+            "id" : 0,
+            "permissionIds" : "string",
+            "permissions" : [ "..." ],
+            "roleName" : "string"
+          } ],
+          "rolesIds" : "string"
+        },
+        "classInfo" : "string",
+        "createTime" : "string",
+        "headMaster" : "string",
+        "id" : 0,
+        "lay_CHECKED" : true,
+        "name" : "string",
+        "school" : {
+          "LAY_CHECKED" : true,
+          "address" : "string",
+          "agents" : {
+            "address" : "string",
+            "areaId" : 0,
+            "birthDay" : "string",
+            "cityId" : 0,
+            "detailAddress" : "string",
+            "email" : "string",
+            "headerImgUrl" : "string",
+            "id" : 0,
+            "name" : "string",
+            "phone" : "string",
+            "provinceId" : 0,
+            "registerDate" : "string",
+            "sex" : 0,
+            "user" : {
+              "createTiem" : "string",
+              "id" : 0,
+              "loginName" : "string",
+              "name" : "string",
+              "passWord" : "string",
+              "roles" : [ {
+                "id" : 0,
+                "permissionIds" : "string",
+                "permissions" : [ "..." ],
+                "roleName" : "string"
+              } ],
+              "rolesIds" : "string"
+            }
+          },
+          "areaId" : 0,
+          "city" : "string",
+          "cityId" : 0,
+          "createTime" : "string",
+          "detailAddress" : "string",
+          "id" : 0,
+          "lay_CHECKED" : true,
+          "masterId" : 0,
+          "mastername" : "string",
+          "name" : "string",
+          "phone" : "string",
+          "province" : "string",
+          "provinceId" : 0,
+          "seven" : 0,
+          "shcoolDes" : "string",
+          "thirty" : 0,
+          "uid" : "string",
+          "userNumber" : 0
+        },
+        "studentNum" : 0,
+        "withInSevenNUm" : 0,
+        "withInTwoNum" : 0
+      },
+      "createDate" : "string",
+      "id" : 0,
+      "msgContent" : "string",
+      "msgType" : 0,
+      "pushState" : 0,
+      "relatedId" : 0,
+      "sendUser" : {
+        "createTiem" : "string",
+        "id" : 0,
+        "loginName" : "string",
+        "name" : "string",
+        "passWord" : "string",
+        "roles" : [ {
+          "id" : 0,
+          "permissionIds" : "string",
+          "permissions" : [ "..." ],
+          "roleName" : "string"
+        } ],
+        "rolesIds" : "string"
+      },
+      "title" : "string",
+      "url" : "string"
+    },
+    "state" : 0
+  } ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得班级信息的未读数量 {anchor:getclassmessagecountusingpost}
+{noformat}
+POST /messageApi/getclassMessageCount
+{noformat}
+
+
+h5. 说明
+获得班级信息的未读数量
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/getclassMessageCount
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 设置消息为已读 {anchor:getclassmessagenotreadedusingpost_1}
+{noformat}
+POST /messageApi/setMessageReaded
+{noformat}
+
+
+h5. 说明
+设置消息为已读
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*messageId*\\ \\ _可选_||messageId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/messageApi/setMessageReaded
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "messageId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. New-review-record-api {anchor:new-review-record-api_resource}
+统计新学复习的单词数量
+
+
+h4. 获得更新复习新学 {anchor:getreviewrecordnumusingpost}
+{noformat}
+POST /NewReviewRecordApi/getReviewRecordNum
+{noformat}
+
+
+h5. 说明
+获得更新复习新学  
+ yyyy-MM-dd HH:mm:ss
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*date*\\ \\ _可选_||date||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/NewReviewRecordApi/getReviewRecordNum
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "date" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得统计的新学和复习的个数 {anchor:getreviewnumusingpost}
+{noformat}
+POST /NewReviewRecordApi/getReviewRecordNums
+{noformat}
+
+
+h5. 说明
+获得统计的新学和复习的个数  
+ yyyy-MM-dd HH:mm:ss
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*endTime*\\ \\ _可选_||endTime||string|
+|*Query*|*startTime*\\ \\ _可选_||startTime||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/NewReviewRecordApi/getReviewRecordNums
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "endTime" : "string",
+  "startTime" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 更新复习新学 {anchor:uploadnewreviewrecordusingpost}
+{noformat}
+POST /NewReviewRecordApi/uploadNewReviewRecord
+{noformat}
+
+
+h5. 说明
+更新复习新学  
+ yyyy-MM-dd HH:mm:ss
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*date*\\ \\ _可选_||date||string|
+|*Query*|*newIds*\\ \\ _可选_||newIds||string|
+|*Query*|*reviewIds*\\ \\ _可选_||reviewIds||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/NewReviewRecordApi/uploadNewReviewRecord
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "date" : "string",
+  "newIds" : "string",
+  "reviewIds" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. New-words-api {anchor:new-words-api_resource}
+生词本
+
+
+h4. 添加生词 {anchor:addnewwordusingpost}
+{noformat}
+POST /newWordsApi/addNewWord
+{noformat}
+
+
+h5. 说明
+添加生词
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+|*Query*|*wordId*\\ \\ _可选_||wordId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/newWordsApi/addNewWord
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0,
+  "wordId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 删除 {anchor:deleteusingpost}
+{noformat}
+POST /newWordsApi/delete
+{noformat}
+
+
+h5. 说明
+删除
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*newWordId*\\ \\ _可选_||newWordId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/newWordsApi/delete
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "newWordId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 根据用户id删除生词库单词 {anchor:deletenewwordusingpost}
+{noformat}
+POST /newWordsApi/deleteNewWord
+{noformat}
+
+
+h5. 说明
+根据用户id删除生词库单词
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookWordId*\\ \\ _可选_||bookWordId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/newWordsApi/deleteNewWord
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookWordId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得生词表 {anchor:findnewwordsusingpost}
+{noformat}
+POST /newWordsApi/findNewWords
+{noformat}
+
+
+h5. 说明
+获得生词表
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/newWordsApi/findNewWords
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得当前的生词个数 {anchor:getnewwordnumusingpost}
+{noformat}
+POST /newWordsApi/getNewWordNum
+{noformat}
+
+
+h5. 说明
+获得当前的生词个数
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/newWordsApi/getNewWordNum
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得生词表的历史 {anchor:getnewwordshistoryusingpost}
+{noformat}
+POST /newWordsApi/getNewWordsHistory
+{noformat}
+
+
+h5. 说明
+获得生词表的历史
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult|#pageapiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/newWordsApi/getNewWordsHistory
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ "object" ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 单词是否加入生词库 {anchor:isaddtowordsusingpost}
+{noformat}
+POST /newWordsApi/isAddToWords
+{noformat}
+
+
+h5. 说明
+单词是否加入生词库
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookWordId*\\ \\ _可选_||bookWordId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/newWordsApi/isAddToWords
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookWordId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 设置当前的单词为巩固的单词 {anchor:setnowtohistoryusingpost}
+{noformat}
+POST /newWordsApi/setNowToHistory
+{noformat}
+
+
+h5. 说明
+设置当前的单词为巩固的单词
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*newWordId*\\ \\ _可选_||newWordId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/newWordsApi/setNowToHistory
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "newWordId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. One-word-api {anchor:one-word-api_resource}
+名言相关
+
+
+h4. 获得当天的名言 {anchor:getonewordusingpost}
+{noformat}
+POST /getOneWord
+{noformat}
+
+
+h5. 说明
+获得当天的名言
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/getOneWord
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得分享的内容 {anchor:getsharecontentusingpost}
+{noformat}
+POST /getShareContent
+{noformat}
+
+
+h5. 说明
+获得分享的内容
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/getShareContent
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 分享成功进行调用 {anchor:sharecallbackusingpost}
+{noformat}
+POST /shareCallback
+{noformat}
+
+
+h5. 说明
+分享成功进行调用
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/shareCallback
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Order-api {anchor:order-api_resource}
+订单相关
+
+
+h4. 获得订单列表 {anchor:getorderlistusingpost}
+{noformat}
+POST /orderApi/getOrderList
+{noformat}
+
+
+h5. 说明
+获得订单列表
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*limit*\\ \\ _可选_||limit||integer (int32)|
+|*Query*|*page*\\ \\ _可选_||page||integer (int32)|
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[PageApiResult«AppUserOrder»|#ddcbc4d95d389c473ed78795180271b6]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/orderApi/getOrderList
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "limit" : 0,
+  "page" : 0,
+  "type" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "allCount" : 0,
+  "currentPage" : 0,
+  "datas" : [ {
+    "appUserAccount" : {
+      "accumulatePoints" : 0,
+      "goldCoins" : 0,
+      "id" : 0
+    },
+    "changeNum" : 0,
+    "createDate" : "string",
+    "des" : "string",
+    "id" : 0,
+    "personalLearnBook" : {
+      "appUserNumber" : 0,
+      "boughtTime" : "string",
+      "buy" : true,
+      "currentLeftWords" : "string",
+      "currentUnitFinished" : true,
+      "currentUnitName" : "string",
+      "currentWord" : 0,
+      "currentWordNum" : 0,
+      "currnetWordname" : "string",
+      "extractPoints" : "string",
+      "freeBoughtTime" : "string",
+      "id" : 0,
+      "isCurrentBook" : 0,
+      "isFinished" : 0,
+      "isPassed" : 0,
+      "isPreTested" : 0,
+      "lastTestTime" : "string",
+      "learnAfterScore" : "string",
+      "learnBeforeScore" : "string",
+      "learnBook" : {
+        "bookName" : "string",
+        "createTime" : "string",
+        "downLoadNum" : 0,
+        "download" : 0,
+        "grade" : "string",
+        "id" : 0,
+        "imgUrl" : "string",
+        "price" : 0,
+        "stage" : "string",
+        "updateTime" : "string",
+        "version" : "string",
+        "wordsNum" : 0
+      },
+      "learnedWords" : "string",
+      "preScore" : 0,
+      "score" : 0,
+      "teacherSuggest" : "string",
+      "totalWordNum" : 0,
+      "unitId" : 0,
+      "unitWordProgress" : 0,
+      "valiable" : true
+    },
+    "redeemCode" : {
+      "activeTime" : "string",
+      "codeMoney" : 0,
+      "codeNum" : "string",
+      "createTime" : "string",
+      "des" : "string",
+      "id" : 0,
+      "school" : {
+        "LAY_CHECKED" : true,
+        "address" : "string",
+        "agents" : {
+          "address" : "string",
+          "areaId" : 0,
+          "birthDay" : "string",
+          "cityId" : 0,
+          "detailAddress" : "string",
+          "email" : "string",
+          "headerImgUrl" : "string",
+          "id" : 0,
+          "name" : "string",
+          "phone" : "string",
+          "provinceId" : 0,
+          "registerDate" : "string",
+          "sex" : 0,
+          "user" : {
+            "createTiem" : "string",
+            "id" : 0,
+            "loginName" : "string",
+            "name" : "string",
+            "passWord" : "string",
+            "roles" : [ {
+              "id" : 0,
+              "permissionIds" : "string",
+              "permissions" : [ {
+                "LAY_CHECKED" : true,
+                "dataPath" : "string",
+                "hasChild" : 0,
+                "icon" : "string",
+                "id" : 0,
+                "lay_CHECKED" : true,
+                "menuId" : 0,
+                "parentId" : 0,
+                "permissonName" : "string",
+                "powerList" : [ {
+                  "LAY_CHECKED" : true,
+                  "dataPath" : "string",
+                  "hasChild" : 0,
+                  "icon" : "string",
+                  "id" : 0,
+                  "lay_CHECKED" : true,
+                  "menuId" : 0,
+                  "parentId" : 0,
+                  "permissonName" : "string",
+                  "powerList" : [ "..." ],
+                  "powerMenuName" : "string",
+                  "powerName" : "string",
+                  "powerUrl" : "string",
+                  "roles" : [ {
+                    "id" : 0,
+                    "permissionIds" : "string",
+                    "permissions" : [ "..." ],
+                    "roleName" : "string"
+                  } ]
+                } ],
+                "powerMenuName" : "string",
+                "powerName" : "string",
+                "powerUrl" : "string",
+                "roles" : [ {
+                  "id" : 0,
+                  "permissionIds" : "string",
+                  "permissions" : [ "..." ],
+                  "roleName" : "string"
+                } ]
+              } ],
+              "roleName" : "string"
+            } ],
+            "rolesIds" : "string"
+          }
+        },
+        "areaId" : 0,
+        "city" : "string",
+        "cityId" : 0,
+        "createTime" : "string",
+        "detailAddress" : "string",
+        "id" : 0,
+        "lay_CHECKED" : true,
+        "masterId" : 0,
+        "mastername" : "string",
+        "name" : "string",
+        "phone" : "string",
+        "province" : "string",
+        "provinceId" : 0,
+        "seven" : 0,
+        "shcoolDes" : "string",
+        "thirty" : 0,
+        "uid" : "string",
+        "userNumber" : 0
+      },
+      "state" : 0,
+      "termOfvalidity" : 0,
+      "timeOut" : true,
+      "upLoadUser" : {
+        "createTiem" : "string",
+        "id" : 0,
+        "loginName" : "string",
+        "name" : "string",
+        "passWord" : "string",
+        "roles" : [ {
+          "id" : 0,
+          "permissionIds" : "string",
+          "permissions" : [ "..." ],
+          "roleName" : "string"
+        } ],
+        "rolesIds" : "string"
+      },
+      "user" : {
+        "address" : "string",
+        "appUserAccount" : {
+          "accumulatePoints" : 0,
+          "goldCoins" : 0,
+          "id" : 0
+        },
+        "areaId" : 0,
+        "benginStartTime" : "string",
+        "birthDay" : "string",
+        "booksCount" : 0,
+        "cityId" : 0,
+        "classInSchool" : {
+          "LAY_CHECKED" : true,
+          "addUser" : {
+            "createTiem" : "string",
+            "id" : 0,
+            "loginName" : "string",
+            "name" : "string",
+            "passWord" : "string",
+            "roles" : [ {
+              "id" : 0,
+              "permissionIds" : "string",
+              "permissions" : [ "..." ],
+              "roleName" : "string"
+            } ],
+            "rolesIds" : "string"
+          },
+          "classInfo" : "string",
+          "createTime" : "string",
+          "headMaster" : "string",
+          "id" : 0,
+          "lay_CHECKED" : true,
+          "name" : "string",
+          "school" : {
+            "LAY_CHECKED" : true,
+            "address" : "string",
+            "agents" : {
+              "address" : "string",
+              "areaId" : 0,
+              "birthDay" : "string",
+              "cityId" : 0,
+              "detailAddress" : "string",
+              "email" : "string",
+              "headerImgUrl" : "string",
+              "id" : 0,
+              "name" : "string",
+              "phone" : "string",
+              "provinceId" : 0,
+              "registerDate" : "string",
+              "sex" : 0,
+              "user" : {
+                "createTiem" : "string",
+                "id" : 0,
+                "loginName" : "string",
+                "name" : "string",
+                "passWord" : "string",
+                "roles" : [ {
+                  "id" : 0,
+                  "permissionIds" : "string",
+                  "permissions" : [ "..." ],
+                  "roleName" : "string"
+                } ],
+                "rolesIds" : "string"
+              }
+            },
+            "areaId" : 0,
+            "city" : "string",
+            "cityId" : 0,
+            "createTime" : "string",
+            "detailAddress" : "string",
+            "id" : 0,
+            "lay_CHECKED" : true,
+            "masterId" : 0,
+            "mastername" : "string",
+            "name" : "string",
+            "phone" : "string",
+            "province" : "string",
+            "provinceId" : 0,
+            "seven" : 0,
+            "shcoolDes" : "string",
+            "thirty" : 0,
+            "uid" : "string",
+            "userNumber" : 0
+          },
+          "studentNum" : 0,
+          "withInSevenNUm" : 0,
+          "withInTwoNum" : 0
+        },
+        "classInSchoolId" : 0,
+        "hasCompeltedInfo" : true,
+        "id" : 0,
+        "imgUrl" : "string",
+        "isBatchCreate" : 0,
+        "lastSignTime" : "string",
+        "learnBookWords" : "string",
+        "learnTime" : 0,
+        "level" : "string",
+        "name" : "string",
+        "newWordNum" : 0,
+        "number1" : "string",
+        "number2" : "string",
+        "pass64" : "string",
+        "password" : "string",
+        "phoneForInfo" : "string",
+        "phoneNum" : "string",
+        "provinceId" : 0,
+        "punchCardsDays" : 0,
+        "qqNickName" : "string",
+        "qqNumber" : "string",
+        "qqOpenId" : "string",
+        "realNameForInfo" : "string",
+        "registerDate" : "string",
+        "schoolId" : "string",
+        "schoolName" : "string",
+        "sex" : 0,
+        "sign" : "string",
+        "standardDay" : 0,
+        "teacher" : "string",
+        "thirdImgUrl" : "string",
+        "thirdNickName" : "string",
+        "todayStudyTime" : "string",
+        "totalNewOnlineTime" : "string",
+        "totalNewVolidTime" : "string",
+        "totalStudyTime" : "string",
+        "uid" : "string",
+        "wechatNickName" : "string",
+        "wechatNum" : "string",
+        "wechatOpenId" : "string",
+        "weiboNickName" : "string",
+        "weiboNumber" : "string",
+        "weiboOpenId" : "string",
+        "wordNum" : 0,
+        "wordsNumReview" : 0
+      }
+    },
+    "relatedId" : 0,
+    "title" : "string",
+    "type" : 0
+  } ],
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Personal-book-api {anchor:personal-book-api_resource}
+个人课本
+
+
+h4. 认知当前单词 {anchor:addcurrentwordusingpost}
+{noformat}
+POST /PersonalBookApi/addCurrentWord
+{noformat}
+
+{note}
+operation.deprecated
+{note}
+
+
+h5. 说明
+认知当前单词
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*pesonalLearnBookId*\\ \\ _可选_||pesonalLearnBookId||integer (int64)|
+|*Query*|*wordId*\\ \\ _可选_||wordId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/addCurrentWord
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "pesonalLearnBookId" : 0,
+  "wordId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 直接购买图书--无需进行体验 {anchor:buybookallusingpost}
+{noformat}
+POST /PersonalBookApi/buyBookAll
+{noformat}
+
+
+h5. 说明
+直接购买图书
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/buyBookAll
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 购买图书 {anchor:boughtusingpost}
+{noformat}
+POST /PersonalBookApi/buyPersonalBook
+{noformat}
+
+
+h5. 说明
+购买图书
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/buyPersonalBook
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. dataSync {anchor:datasyncusingpost}
+{noformat}
+POST /PersonalBookApi/dataSync
+{noformat}
+
+
+h5. 说明
+同步文件
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[FileSystemResource|#filesystemresource]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/dataSync
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "description" : "string",
+  "file" : "file",
+  "filename" : "string",
+  "inputStream" : { },
+  "open" : true,
+  "outputStream" : { },
+  "path" : "string",
+  "readable" : true,
+  "uri" : {
+    "absolute" : true,
+    "authority" : "string",
+    "fragment" : "string",
+    "host" : "string",
+    "opaque" : true,
+    "path" : "string",
+    "port" : 0,
+    "query" : "string",
+    "rawAuthority" : "string",
+    "rawFragment" : "string",
+    "rawPath" : "string",
+    "rawQuery" : "string",
+    "rawSchemeSpecificPart" : "string",
+    "rawUserInfo" : "string",
+    "scheme" : "string",
+    "schemeSpecificPart" : "string",
+    "userInfo" : "string"
+  },
+  "url" : {
+    "authority" : "string",
+    "content" : "object",
+    "defaultPort" : 0,
+    "file" : "string",
+    "host" : "string",
+    "path" : "string",
+    "port" : 0,
+    "protocol" : "string",
+    "query" : "string",
+    "ref" : "string",
+    "userInfo" : "string"
+  },
+  "writable" : true
+}
+{code}
+
+
+h4. dataSync {anchor:datasyncusingget}
+{noformat}
+GET /PersonalBookApi/dataSync
+{noformat}
+
+
+h5. 说明
+同步文件
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[FileSystemResource|#filesystemresource]|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/dataSync
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "description" : "string",
+  "file" : "file",
+  "filename" : "string",
+  "inputStream" : { },
+  "open" : true,
+  "outputStream" : { },
+  "path" : "string",
+  "readable" : true,
+  "uri" : {
+    "absolute" : true,
+    "authority" : "string",
+    "fragment" : "string",
+    "host" : "string",
+    "opaque" : true,
+    "path" : "string",
+    "port" : 0,
+    "query" : "string",
+    "rawAuthority" : "string",
+    "rawFragment" : "string",
+    "rawPath" : "string",
+    "rawQuery" : "string",
+    "rawSchemeSpecificPart" : "string",
+    "rawUserInfo" : "string",
+    "scheme" : "string",
+    "schemeSpecificPart" : "string",
+    "userInfo" : "string"
+  },
+  "url" : {
+    "authority" : "string",
+    "content" : "object",
+    "defaultPort" : 0,
+    "file" : "string",
+    "host" : "string",
+    "path" : "string",
+    "port" : 0,
+    "protocol" : "string",
+    "query" : "string",
+    "ref" : "string",
+    "userInfo" : "string"
+  },
+  "writable" : true
+}
+{code}
+
+
+h4. downLoadBookWordsFile {anchor:downloadwordsfileusingpost}
+{noformat}
+POST /PersonalBookApi/downLoadBookWordsFile
+{noformat}
+
+
+h5. 说明
+打包下载文件
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[FileSystemResource|#filesystemresource]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/downLoadBookWordsFile
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "description" : "string",
+  "file" : "file",
+  "filename" : "string",
+  "inputStream" : { },
+  "open" : true,
+  "outputStream" : { },
+  "path" : "string",
+  "readable" : true,
+  "uri" : {
+    "absolute" : true,
+    "authority" : "string",
+    "fragment" : "string",
+    "host" : "string",
+    "opaque" : true,
+    "path" : "string",
+    "port" : 0,
+    "query" : "string",
+    "rawAuthority" : "string",
+    "rawFragment" : "string",
+    "rawPath" : "string",
+    "rawQuery" : "string",
+    "rawSchemeSpecificPart" : "string",
+    "rawUserInfo" : "string",
+    "scheme" : "string",
+    "schemeSpecificPart" : "string",
+    "userInfo" : "string"
+  },
+  "url" : {
+    "authority" : "string",
+    "content" : "object",
+    "defaultPort" : 0,
+    "file" : "string",
+    "host" : "string",
+    "path" : "string",
+    "port" : 0,
+    "protocol" : "string",
+    "query" : "string",
+    "ref" : "string",
+    "userInfo" : "string"
+  },
+  "writable" : true
+}
+{code}
+
+
+h4. downLoadBookWordsFile {anchor:downloadwordsfileusingget}
+{noformat}
+GET /PersonalBookApi/downLoadBookWordsFile
+{noformat}
+
+
+h5. 说明
+打包下载文件
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[FileSystemResource|#filesystemresource]|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/downLoadBookWordsFile
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "description" : "string",
+  "file" : "file",
+  "filename" : "string",
+  "inputStream" : { },
+  "open" : true,
+  "outputStream" : { },
+  "path" : "string",
+  "readable" : true,
+  "uri" : {
+    "absolute" : true,
+    "authority" : "string",
+    "fragment" : "string",
+    "host" : "string",
+    "opaque" : true,
+    "path" : "string",
+    "port" : 0,
+    "query" : "string",
+    "rawAuthority" : "string",
+    "rawFragment" : "string",
+    "rawPath" : "string",
+    "rawQuery" : "string",
+    "rawSchemeSpecificPart" : "string",
+    "rawUserInfo" : "string",
+    "scheme" : "string",
+    "schemeSpecificPart" : "string",
+    "userInfo" : "string"
+  },
+  "url" : {
+    "authority" : "string",
+    "content" : "object",
+    "defaultPort" : 0,
+    "file" : "string",
+    "host" : "string",
+    "path" : "string",
+    "port" : 0,
+    "protocol" : "string",
+    "query" : "string",
+    "ref" : "string",
+    "userInfo" : "string"
+  },
+  "writable" : true
+}
+{code}
+
+
+h4. 获得图书的价格 {anchor:getbookpriceusingpost}
+{noformat}
+POST /PersonalBookApi/getBookPrice
+{noformat}
+
+
+h5. 说明
+获得图书的价格
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/getBookPrice
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人所有的课本 {anchor:getpersonalallbooksusingpost}
+{noformat}
+POST /PersonalBookApi/personalAllBooks
+{noformat}
+
+
+h5. 说明
+获得个人所有的课本
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/personalAllBooks
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人除当前的所有课本 {anchor:personalbookswithoutcurrentusingpost}
+{noformat}
+POST /PersonalBookApi/personalBooksWithOutCurrent
+{noformat}
+
+
+h5. 说明
+获得个人除当前的所有课本
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/personalBooksWithOutCurrent
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人当前课本 {anchor:personalcurrentbookusingpost}
+{noformat}
+POST /PersonalBookApi/personalCurrentBook
+{noformat}
+
+
+h5. 说明
+获得个人当前课本
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/personalCurrentBook
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人的unit {anchor:findpersnalunitsusingpost}
+{noformat}
+POST /PersonalBookApi/personalUnits
+{noformat}
+
+
+h5. 说明
+获得个人的unit
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+|*Query*|*personalBookId*\\ \\ _可选_||personalBookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/personalUnits
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "bookId" : 0,
+  "personalBookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 设置为当前的课本 {anchor:setcurrentbookusingpost}
+{noformat}
+POST /PersonalBookApi/setCurrentLearnBooks
+{noformat}
+
+
+h5. 说明
+设置为当前的课本
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*personalLeanrBookId*\\ \\ _可选_||personalLeanrBookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PersonalBookApi/setCurrentLearnBooks
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "personalLeanrBookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Personal-test-api {anchor:personal-test-api_resource}
+个人测试相关
+
+
+h4. addBookTest {anchor:addbooktestusingpost}
+{noformat}
+POST /personalBoolTestApi/addBookTest
+{noformat}
+
+
+h5. 说明
+保存用户的的课本测试
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*errorIds*\\ \\ _可选_||errorIds||string|
+|*Query*|*ids*\\ \\ _可选_||ids||string|
+|*Query*|*isPassed*\\ \\ _可选_||isPassed||integer (int32)|
+|*Query*|*isPreLearnTest*\\ \\ _可选_||isPreLearnTest||integer (int32)|
+|*Query*|*personalLearnBooId*\\ \\ _可选_||personalLearnBooId||integer (int64)|
+|*Query*|*rightWordsNum*\\ \\ _可选_||rightWordsNum||integer (int64)|
+|*Query*|*score*\\ \\ _可选_||score||integer (int32)|
+|*Query*|*testDate*\\ \\ _可选_||testDate||string|
+|*Query*|*testRecords*\\ \\ _可选_||testRecords||string|
+|*Query*|*testTime*\\ \\ _可选_||testTime||integer (int64)|
+|*Query*|*testWordsNum*\\ \\ _可选_||testWordsNum||integer (int64)|
+|*Query*|*totalTestTime*\\ \\ _可选_||totalTestTime||integer (int64)|
+|*Query*|*totalWordsNum*\\ \\ _可选_||totalWordsNum||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/addBookTest
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "errorIds" : "string",
+  "ids" : "string",
+  "isPassed" : 0,
+  "isPreLearnTest" : 0,
+  "personalLearnBooId" : 0,
+  "rightWordsNum" : 0,
+  "score" : 0,
+  "testDate" : "string",
+  "testRecords" : "string",
+  "testTime" : 0,
+  "testWordsNum" : 0,
+  "totalTestTime" : 0,
+  "totalWordsNum" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 复习模块--上传测试结果 {anchor:addreviewtestusingpost}
+{noformat}
+POST /personalBoolTestApi/addReviewTest
+{noformat}
+
+
+h5. 说明
+上传测试结果
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*errorIds*\\ \\ _可选_||errorIds||string|
+|*Query*|*rightIds*\\ \\ _可选_||rightIds||string|
+|*Query*|*state*\\ \\ _可选_||state||string|
+|*Query*|*testUseTime*\\ \\ _可选_||testUseTime||integer (int64)|
+|*Query*|*totalTestTime*\\ \\ _可选_||totalTestTime||integer (int64)|
+|*Query*|*unitId*\\ \\ _可选_||unitId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/addReviewTest
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "errorIds" : "string",
+  "rightIds" : "string",
+  "state" : "string",
+  "testUseTime" : 0,
+  "totalTestTime" : 0,
+  "unitId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. addUnitTest {anchor:addunittestusingpost}
+{noformat}
+POST /personalBoolTestApi/addUnitTest
+{noformat}
+
+
+h5. 说明
+保存单元测试的结果--isPassed 2 notPassed  1
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*errorIds*\\ \\ _可选_||errorIds||string|
+|*Query*|*ids*\\ \\ _可选_||ids||string|
+|*Query*|*isPassed*\\ \\ _可选_||isPassed||integer (int32)|
+|*Query*|*personalUnitID*\\ \\ _可选_||personalUnitID||integer (int64)|
+|*Query*|*rightWordsNum*\\ \\ _可选_||rightWordsNum||integer (int64)|
+|*Query*|*score*\\ \\ _可选_||score||integer (int32)|
+|*Query*|*testDate*\\ \\ _可选_||testDate||string|
+|*Query*|*testRecords*\\ \\ _可选_||testRecords||string|
+|*Query*|*testTime*\\ \\ _可选_||testTime||integer (int64)|
+|*Query*|*testWordsNum*\\ \\ _可选_||testWordsNum||integer (int64)|
+|*Query*|*totalTestTime*\\ \\ _可选_||totalTestTime||integer (int64)|
+|*Query*|*totalWordsNum*\\ \\ _可选_||totalWordsNum||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/addUnitTest
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "errorIds" : "string",
+  "ids" : "string",
+  "isPassed" : 0,
+  "personalUnitID" : 0,
+  "rightWordsNum" : 0,
+  "score" : 0,
+  "testDate" : "string",
+  "testRecords" : "string",
+  "testTime" : 0,
+  "testWordsNum" : 0,
+  "totalTestTime" : 0,
+  "totalWordsNum" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 复习模块--查询测试结果 {anchor:findreviewtestusingpost}
+{noformat}
+POST /personalBoolTestApi/findReviewTest
+{noformat}
+
+
+h5. 说明
+复习模块--查询测试结果
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*unitId*\\ \\ _可选_||unitId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/findReviewTest
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "unitId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人课本的测试记录详情---每个测试题的详情 {anchor:findtestdetailusingpost}
+{noformat}
+POST /personalBoolTestApi/findTestDetail
+{noformat}
+
+
+h5. 说明
+获得个人课本的测试记录详情--每个测试题的详情
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookTestId*\\ \\ _可选_||bookTestId||integer (int64)|
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+|*Query*|*unitTestId*\\ \\ _可选_||unitTestId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/findTestDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookTestId" : 0,
+  "type" : 0,
+  "unitTestId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获取测试规则说明 {anchor:findtestrulesusingpost}
+{noformat}
+POST /personalBoolTestApi/findTestRules
+{noformat}
+
+
+h5. 说明
+获取测试规则说明
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/findTestRules
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得课本测试的题目详情(单词列表) {anchor:getbooktestwordsusingpost}
+{noformat}
+POST /personalBoolTestApi/getBookTestWords
+{noformat}
+
+
+h5. 说明
+获得课本测试的题目详情(单词列表)
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*isWrongOnly*\\ \\ _可选_||isWrongOnly||integer (int32)|
+|*Query*|*testId*\\ \\ _可选_||testId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/getBookTestWords
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "isWrongOnly" : 0,
+  "testId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人的课本测试 {anchor:getpersonalbooktestsusingpost}
+{noformat}
+POST /personalBoolTestApi/getPersonalBookTests
+{noformat}
+
+
+h5. 说明
+获得个人的课本测试
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/getPersonalBookTests
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人单元的测试 {anchor:getpersonalunittestsusingpost}
+{noformat}
+POST /personalBoolTestApi/getPersonalUnitTests
+{noformat}
+
+
+h5. 说明
+获得个人单元的测试
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*personalLearnBookId*\\ \\ _可选_||personalLearnBookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/getPersonalUnitTests
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "personalLearnBookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人单元的测试记录-日期 {anchor:getpeusingpost}
+{noformat}
+POST /personalBoolTestApi/getPersonalUnitTestsRecords
+{noformat}
+
+
+h5. 说明
+获得个人单元的测试记录-日期
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*personalUnitId*\\ \\ _可选_||personalUnitId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/getPersonalUnitTestsRecords
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "personalUnitId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人课本的测试记录--日期 {anchor:getpersonalbooktestrecordsusingpost}
+{noformat}
+POST /personalBoolTestApi/getPersonalbookTestRecords
+{noformat}
+
+
+h5. 说明
+获得个人课本的测试记录-日期
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*personalLeanrBookId*\\ \\ _可选_||personalLeanrBookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/getPersonalbookTestRecords
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "personalLeanrBookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 复习模块--个人单元测试情况 {anchor:getunittestdetailsusingpost}
+{noformat}
+POST /personalBoolTestApi/getUnitTestDetails
+{noformat}
+
+
+h5. 说明
+复习模块，个人单元测试情况
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/getUnitTestDetails
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "bookId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得单元测试的题目详情(单词列表) {anchor:getunittestwordsusingpost}
+{noformat}
+POST /personalBoolTestApi/getUnitTestWords
+{noformat}
+
+
+h5. 说明
+获得单元测试的题目详情(单词列表)
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*isWrongOnly*\\ \\ _可选_||isWrongOnly||integer (int32)|
+|*Query*|*testId*\\ \\ _可选_||testId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/getUnitTestWords
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "isWrongOnly" : 0,
+  "testId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 今天是否测试过了课本 {anchor:istodaytestbookusingpost}
+{noformat}
+POST /personalBoolTestApi/isTodayTestBook
+{noformat}
+
+
+h5. 说明
+今天是否测试过了课本--0未测试   -1已测试
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*personalBookId*\\ \\ _可选_||personalBookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/isTodayTestBook
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "personalBookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 今天是否测试过了单元 {anchor:istodaytestunitusingpost}
+{noformat}
+POST /personalBoolTestApi/isTodayTestUnit
+{noformat}
+
+
+h5. 说明
+今天是否测试过了单元--0未测试   -1已测试
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*unitId*\\ \\ _可选_||unitId||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/personalBoolTestApi/isTodayTestUnit
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "unitId" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Punch-card-api {anchor:punch-card-api_resource}
+打卡相关的api
+
+
+h4. 获得连续的几天 {anchor:getcontinuedusingpost}
+{noformat}
+POST /PunchCardApi/getContinued
+{noformat}
+
+
+h5. 说明
+获得连续的几天-【0，0，0，0，0，0，1，0】
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PunchCardApi/getContinued
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得打卡界面的详情 {anchor:getpunchcardsdetailusingpost}
+{noformat}
+POST /PunchCardApi/getPunchCardsDetail
+{noformat}
+
+
+h5. 说明
+获得打卡界面的详情
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PunchCardApi/getPunchCardsDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 打卡 {anchor:punchcardusingpost}
+{noformat}
+POST /PunchCardApi/punchCard
+{noformat}
+
+
+h5. 说明
+打卡
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PunchCardApi/punchCard
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得总的打卡天数-累计打卡 {anchor:punchcarddaysusingpost}
+{noformat}
+POST /PunchCardApi/punchCardDays
+{noformat}
+
+
+h5. 说明
+获得总的打卡天数--返回数字
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/PunchCardApi/punchCardDays
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Ranking-api {anchor:ranking-api_resource}
+排名相关的api
+
+
+h4. 获得个人的各种排名 {anchor:getonepersonalrankingusingpost}
+{noformat}
+POST /getOnePersonalRanking
+{noformat}
+
+
+h5. 说明
+获得个人的各种排名
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*date*\\ \\ _可选_||date||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/getOnePersonalRanking
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "date" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得排名的情况 {anchor:getrankingallusingpost}
+{noformat}
+POST /getRankingAll
+{noformat}
+
+
+h5. 说明
+获得排名的情况
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*date*\\ \\ _可选_||date||string|
+|*Query*|*provinceId*\\ \\ _可选_||provinceId||integer (int64)|
+|*Query*|*schoolId*\\ \\ _可选_||schoolId||string|
+|*Query*|*topNum*\\ \\ _可选_||topNum||integer (int32)|
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/getRankingAll
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "date" : "string",
+  "provinceId" : 0,
+  "schoolId" : "string",
+  "topNum" : 0,
+  "type" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得排名的情况 {anchor:getrankinginfousingpost}
+{noformat}
+POST /getRankingInfo
+{noformat}
+
+
+h5. 说明
+获得排名的情况
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*date*\\ \\ _可选_||date||string|
+|*Query*|*topNum*\\ \\ _可选_||topNum||integer (int32)|
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/getRankingInfo
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "date" : "string",
+  "topNum" : 0,
+  "type" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Recharge-api {anchor:recharge-api_resource}
+充值相关
+
+
+h4. recharge {anchor:rechargeusingpost}
+{noformat}
+POST /RechargeApi/recharge
+{noformat}
+
+
+h5. 说明
+充值
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*code*\\ \\ _可选_||code||string|
+|*Query*|*schoolUID*\\ \\ _可选_||schoolUID||string|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/RechargeApi/recharge
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "code" : "string",
+  "schoolUID" : "string",
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Reviews-api {anchor:reviews-api_resource}
+复习相关的api
+
+
+h4. 获得reviews的记录 {anchor:findunitsreviewsusingpost}
+{noformat}
+POST /ReviewsApi/findUnitsReviews
+{noformat}
+
+
+h5. 说明
+获得reviews的记录
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/ReviewsApi/findUnitsReviews
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "bookId" : 0,
+  "type" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得用户学习时长 {anchor:getstudytimeusingpost}
+{noformat}
+POST /ReviewsApi/getStudyTime
+{noformat}
+
+
+h5. 说明
+获得用户学习时长
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/ReviewsApi/getStudyTime
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得reviews的记录 {anchor:getoneusingpost}
+{noformat}
+POST /ReviewsApi/getone
+{noformat}
+
+
+h5. 说明
+获得一个复习的详情
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserid*\\ \\ _可选_||appUserid||integer (int64)|
+|*Query*|*bookid*\\ \\ _可选_||bookid||integer (int64)|
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+|*Query*|*unitId*\\ \\ _可选_||unitId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/ReviewsApi/getone
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserid" : 0,
+  "bookid" : 0,
+  "type" : 0,
+  "unitId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 更新review的记录 {anchor:updatereviewrecordusingpost}
+{noformat}
+POST /ReviewsApi/updateReviewRecord
+{noformat}
+
+
+h5. 说明
+更新review的记录
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+|*Query*|*date*\\ \\ _可选_||date||string|
+|*Query*|*times*\\ \\ _可选_||times||string|
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+|*Query*|*unitId*\\ \\ _可选_||unitId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/ReviewsApi/updateReviewRecord
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "bookId" : 0,
+  "date" : "string",
+  "times" : "string",
+  "type" : 0,
+  "unitId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. School-api {anchor:school-api_resource}
+学校相关
+
+
+h4. schoollist {anchor:getschoolsusingpost}
+{noformat}
+POST /school/schoolList
+{noformat}
+
+
+h5. 说明
+获得学校列表
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/school/schoolList
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Sync-user-learn-info-api {anchor:sync-user-learn-info-api_resource}
+同步个人学习的情况
+
+
+h4. getSyncUserLearnInf {anchor:getsyncuserlearninfusingpost}
+{noformat}
+POST /syncUserLearnInfoApi/getSyncInfo
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/syncUserLearnInfoApi/getSyncInfo
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. syncLoginInfo {anchor:synclogininfousingpost}
+{noformat}
+POST /syncUserLearnInfoApi/syncLoginInfo
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/syncUserLearnInfoApi/syncLoginInfo
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. syncPersonalLearnInfo {anchor:syncpersonallearninfousingpost}
+{noformat}
+POST /syncUserLearnInfoApi/syncPersonalLearnInfo
+{noformat}
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*info*\\ \\ _可选_||info||string|
+|*Query*|*states*\\ \\ _可选_||states||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/syncUserLearnInfoApi/syncPersonalLearnInfo
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "info" : "string",
+  "states" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. User-api {anchor:user-api_resource}
+用户相关
+
+
+h4. 绑定手机号 {anchor:bindphonenumusingpost}
+{noformat}
+POST /appUser/bindPhoneNum
+{noformat}
+
+
+h5. 说明
+绑定手机号
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*codeNum*\\ \\ _可选_||codeNum||string|
+|*Query*|*pass*\\ \\ _可选_||pass||string|
+|*Query*|*phone*\\ \\ _可选_||phone||string|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/bindPhoneNum
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "codeNum" : "string",
+  "pass" : "string",
+  "phone" : "string",
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 绑定学校ID {anchor:bindschoolidusingpost}
+{noformat}
+POST /appUser/bindSchoolId
+{noformat}
+
+
+h5. 说明
+绑定学校ID
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*schoolId*\\ \\ _可选_||schoolId||string|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/bindSchoolId
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "schoolId" : "string",
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 绑定第三方账号 {anchor:bindthirdnumusingpost}
+{noformat}
+POST /appUser/bindThirdNum
+{noformat}
+
+
+h5. 说明
+绑定第三方账号
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*loginType*\\ \\ _可选_||loginType||integer (int32)|
+|*Query*|*openId*\\ \\ _可选_||openId||string|
+|*Query*|*thirdNum*\\ \\ _可选_||thirdNum||string|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/bindThirdNum
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "loginType" : 0,
+  "openId" : "string",
+  "thirdNum" : "string",
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 忘记密码 {anchor:forgetpassusingpost}
+{noformat}
+POST /appUser/forgePass
+{noformat}
+
+
+h5. 说明
+忘记密码
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*code*\\ \\ _可选_||code||string|
+|*Query*|*pass*\\ \\ _可选_||pass||string|
+|*Query*|*phone*\\ \\ _可选_||phone||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/forgePass
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "code" : "string",
+  "pass" : "string",
+  "phone" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. getAllCodes {anchor:getallcodesusingpost}
+{noformat}
+POST /appUser/getAllCodes
+{noformat}
+
+
+h5. 说明
+获得所有的验证码
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*key*\\ \\ _可选_||key||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getAllCodes
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "key" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 用户的学习时长 {anchor:learntimeusingpost}
+{noformat}
+POST /appUser/getLearnTime
+{noformat}
+
+
+h5. 说明
+用户在线时长
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getLearnTime
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得积分等级说明 {anchor:getleveldesusingpost_1}
+{noformat}
+POST /appUser/getLevelDes
+{noformat}
+
+
+h5. 说明
+获得积分等级说明
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getLevelDes
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得等级的详细情况 {anchor:getleveldetailusingpost}
+{noformat}
+POST /appUser/getLevelDetail
+{noformat}
+
+
+h5. 说明
+获得等级的详细情况
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getLevelDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 用户在线时长 {anchor:onlinetimeusingpost}
+{noformat}
+POST /appUser/getOnlineTime
+{noformat}
+
+
+h5. 说明
+用户在线时长
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getOnlineTime
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人的奖牌 {anchor:getpersonalmealsusingpost}
+{noformat}
+POST /appUser/getPersonalMeals
+{noformat}
+
+
+h5. 说明
+获得个人的奖牌
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getPersonalMeals
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 强制的获取奖牌 {anchor:getpersonalmealsausingpost}
+{noformat}
+POST /appUser/getPersonalMealsA
+{noformat}
+
+
+h5. 说明
+强制的获取奖牌
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getPersonalMealsA
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得系统配置 {anchor:getsystemconfigusingpost}
+{noformat}
+POST /appUser/getSystemConfig
+{noformat}
+
+
+h5. 说明
+获得系统配置
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getSystemConfig
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人账户信息 {anchor:getaccountdetailusingpost}
+{noformat}
+POST /appUser/getUserAccountDetail
+{noformat}
+
+
+h5. 说明
+获得个人账户信息
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getUserAccountDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人详情 {anchor:getuserdetailusingpost}
+{noformat}
+POST /appUser/getUserDetail
+{noformat}
+
+
+h5. 说明
+获得个人详情
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/getUserDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. login {anchor:loginusingpost}
+{noformat}
+POST /appUser/login
+{noformat}
+
+
+h5. 说明
+登录
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*password*\\ \\ _可选_||password||string|
+|*Query*|*phone*\\ \\ _可选_||phone||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/login
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "password" : "string",
+  "phone" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 注册 {anchor:registusingpost}
+{noformat}
+POST /appUser/regist
+{noformat}
+
+
+h5. 说明
+注册
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*pass*\\ \\ _可选_||pass||string|
+|*Query*|*phone*\\ \\ _可选_||phone||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/regist
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "pass" : "string",
+  "phone" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 发送验证码 {anchor:sendcodeusingpost}
+{noformat}
+POST /appUser/sendCode
+{noformat}
+
+
+h5. 说明
+发送验证码
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*phone*\\ \\ _可选_||phone||string|
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/sendCode
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "phone" : "string",
+  "type" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 设置密码 {anchor:setpassusingpost}
+{noformat}
+POST /appUser/setPass
+{noformat}
+
+
+h5. 说明
+设置密码
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*pass*\\ \\ _可选_||pass||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/setPass
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "pass" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 第三方登录 {anchor:thirdloginusingpost}
+{noformat}
+POST /appUser/thirdLogin
+{noformat}
+
+
+h5. 说明
+第三方登录  登录的类型 1:微信2:微博3：QQ
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*headerImgUrl*\\ \\ _可选_||headerImgUrl||string|
+|*Query*|*loginType*\\ \\ _可选_||loginType||integer (int32)|
+|*Query*|*nickName*\\ \\ _可选_||nickName||string|
+|*Query*|*openId*\\ \\ _可选_||openId||string|
+|*Query*|*thirdNum*\\ \\ _可选_||thirdNum||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/thirdLogin
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "headerImgUrl" : "string",
+  "loginType" : 0,
+  "nickName" : "string",
+  "openId" : "string",
+  "thirdNum" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 解绑第三方账号 {anchor:unbindthirdnumusingpost}
+{noformat}
+POST /appUser/unBindThirdNum
+{noformat}
+
+
+h5. 说明
+解绑第三方账号
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*type*\\ \\ _可选_||type||integer (int32)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/unBindThirdNum
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "type" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 完善用户的信息 {anchor:updateuserinfousingpost}
+{noformat}
+POST /appUser/updateUserInfo
+{noformat}
+
+
+h5. 说明
+完善用户信息
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*areaId*\\ \\ _可选_||areaId||integer (int64)|
+|*Query*|*birthDay*\\ \\ _可选_||birthDay||string|
+|*Query*|*cityId*\\ \\ _可选_||cityId||integer (int64)|
+|*Query*|*classInSchoolId*\\ \\ _可选_||classInSchoolId||integer (int64)|
+|*Query*|*id*\\ \\ _可选_||id||integer (int64)|
+|*Query*|*name*\\ \\ _可选_||name||string|
+|*Query*|*provinceId*\\ \\ _可选_||provinceId||integer (int64)|
+|*Query*|*sex*\\ \\ _可选_||sex||integer (int32)|
+|*Query*|*sign*\\ \\ _可选_||sign||string|
+|*FormData*|*headerFile*\\ \\ _可选_||headerFile||file|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}multipart/form-data{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/updateUserInfo
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "areaId" : 0,
+  "birthDay" : "string",
+  "cityId" : 0,
+  "classInSchoolId" : 0,
+  "id" : 0,
+  "name" : "string",
+  "provinceId" : 0,
+  "sex" : 0,
+  "sign" : "string"
+}
+{code}
+
+
+h6. 请求 formData
+{code:language=json}
+"file"
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 上传用户头像 {anchor:uploaduserimagusingpost}
+{noformat}
+POST /appUser/uploadUserImag
+{noformat}
+
+
+h5. 说明
+上传用户头像
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+|*FormData*|*img*\\ \\ _可选_||img||file|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}multipart/form-data{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/uploadUserImag
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h6. 请求 formData
+{code:language=json}
+"file"
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 校验验证码 {anchor:verifycodeusingpost}
+{noformat}
+POST /appUser/verifyCode
+{noformat}
+
+
+h5. 说明
+校验验证码
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*code*\\ \\ _可选_||code||string|
+|*Query*|*phone*\\ \\ _可选_||phone||string|
+|*Query*|*type*\\ \\ _可选_||type||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/appUser/verifyCode
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "code" : "string",
+  "phone" : "string",
+  "type" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Word-count-api {anchor:word-count-api_resource}
+数据统计-发现
+
+
+h4. wordCount {anchor:getunitcountusingpost}
+{noformat}
+POST /wordCount/getLearnTimeCount
+{noformat}
+
+
+h5. 说明
+数据统计-发现
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/wordCount/getLearnTimeCount
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. newAndReviewsInfos {anchor:getnewandreviewsinfosusingpost}
+{noformat}
+POST /wordCount/newAndReviewsInfos
+{noformat}
+
+
+h5. 说明
+新学和复习的统计
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/wordCount/newAndReviewsInfos
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Word-favorite-api {anchor:word-favorite-api_resource}
+单词收藏相关的Api
+
+
+h4. 单词收藏 {anchor:addwordfavorusingpost}
+{noformat}
+POST /wordFavor/addWordFavor
+{noformat}
+
+
+h5. 说明
+收藏单词
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+|*Query*|*wordId*\\ \\ _可选_||wordId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/wordFavor/addWordFavor
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0,
+  "wordId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 移除收藏的单词 {anchor:delwordfavorusingpost}
+{noformat}
+POST /wordFavor/delWordFavor
+{noformat}
+
+
+h5. 说明
+移除用户收藏的单词
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+|*Query*|*wordId*\\ \\ _可选_||wordId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/wordFavor/delWordFavor
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0,
+  "wordId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 查询收藏的单词 {anchor:getwordfavorusingpost}
+{noformat}
+POST /wordFavor/getWordFavor
+{noformat}
+
+
+h5. 说明
+查询用户收藏的单词
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/wordFavor/getWordFavor
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 单词是否收藏 {anchor:isfavusingpost}
+{noformat}
+POST /wordFavor/isFav
+{noformat}
+
+
+h5. 说明
+单词是否收藏
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+|*Query*|*wordId*\\ \\ _可选_||wordId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/wordFavor/isFav
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0,
+  "wordId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h3. Word-learn-api {anchor:word-learn-api_resource}
+单词学习相关的Api
+
+
+h4. 添加学习的单词 {anchor:addlearnwordusingpost}
+{noformat}
+POST /userwordLearn/addLearnWord
+{noformat}
+
+
+h5. 说明
+添加学习的单词
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*date*\\ \\ _可选_||date||string|
+|*Query*|*isSuccess*\\ \\ _可选_||isSuccess||integer (int32)|
+|*Query*|*state*\\ \\ _可选_||state||integer (int32)|
+|*Query*|*time*\\ \\ _可选_||time||integer (int32)|
+|*Query*|*unitId*\\ \\ _可选_||unitId||integer (int64)|
+|*Query*|*wordId*\\ \\ _可选_||wordId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/addLearnWord
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "date" : "string",
+  "isSuccess" : 0,
+  "state" : 0,
+  "time" : 0,
+  "unitId" : 0,
+  "wordId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 批量添加学习的单词 {anchor:addlearnwordusingpost_1}
+{noformat}
+POST /userwordLearn/batchAddlearnWord
+{noformat}
+
+
+h5. 说明
+批量添加学习的单词
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*date*\\ \\ _可选_||date||string|
+|*Query*|*isSuccesses*\\ \\ _可选_||isSuccesses||string|
+|*Query*|*states*\\ \\ _可选_||states||string|
+|*Query*|*times*\\ \\ _可选_||times||string|
+|*Query*|*unitId*\\ \\ _可选_||unitId||integer (int64)|
+|*Query*|*words*\\ \\ _可选_||words||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/batchAddlearnWord
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "date" : "string",
+  "isSuccesses" : "string",
+  "states" : "string",
+  "times" : "string",
+  "unitId" : 0,
+  "words" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获取某人的学习状态 {anchor:getcertainlearningstateusingpost}
+{noformat}
+POST /userwordLearn/getCertainLearningState
+{noformat}
+
+
+h5. 说明
+获取某人的学习状态
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||string|
+|*Query*|*unitId*\\ \\ _可选_||unitId||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/getCertainLearningState
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : "string",
+  "unitId" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人有效的学习时间 {anchor:getlearntimeusingpost}
+{noformat}
+POST /userwordLearn/getLearnTime
+{noformat}
+
+
+h5. 说明
+获得个人有效的学习时间；；yyyy-MM-dd hh:mm:ss
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*date*\\ \\ _可选_||date||string|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/getLearnTime
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "date" : "string",
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得需要强制复习的单元列表 {anchor:getmustreviewlistusingpost}
+{noformat}
+POST /userwordLearn/getMustReviewList
+{noformat}
+
+
+h5. 说明
+获得需要强制复习的单元列表
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/getMustReviewList
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得课本的学习情况 {anchor:getallbookunitidsusingpost}
+{noformat}
+POST /userwordLearn/getPersonalLearnDetail
+{noformat}
+
+
+h5. 说明
+获得课本的学习情况
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/getPersonalLearnDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "bookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人学习的详情---所有 {anchor:getpersonallearndetailallusingpost}
+{noformat}
+POST /userwordLearn/getPersonalLearnDetailAll
+{noformat}
+
+
+h5. 说明
+获得个人学习的详情
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/getPersonalLearnDetailAll
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 获得个人每天学习情况 {anchor:getpersonallearninfousingpost}
+{noformat}
+POST /userwordLearn/getPersonalLearnInfo
+{noformat}
+
+
+h5. 说明
+获得个人每天学习情况
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/getPersonalLearnInfo
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 保存当前的bookId {anchor:setcurrentbookusingpost_1}
+{noformat}
+POST /userwordLearn/setCurrentBook
+{noformat}
+
+
+h5. 说明
+保存当前的bookId
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/setCurrentBook
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "bookId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 更新课本的学习情况 {anchor:updatepersoanllearndetailusingpost}
+{noformat}
+POST /userwordLearn/updatePersoanlLearnDetail
+{noformat}
+
+
+h5. 说明
+获得课本的学习情况
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*allUnitIds*\\ \\ _可选_||allUnitIds||string|
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+|*Query*|*currentUnitId*\\ \\ _可选_||currentUnitId||integer (int64)|
+|*Query*|*isFinished*\\ \\ _可选_||isFinished||integer (int32)|
+|*Query*|*leftUnitIDs*\\ \\ _可选_||leftUnitIDs||string|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/updatePersoanlLearnDetail
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "allUnitIds" : "string",
+  "appUserId" : 0,
+  "bookId" : 0,
+  "currentUnitId" : 0,
+  "isFinished" : 0,
+  "leftUnitIDs" : "string"
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 更新学习的unit {anchor:updatepersonallearnunitstateusingpost}
+{noformat}
+POST /userwordLearn/updatePersonalLearnUnitState
+{noformat}
+
+
+h5. 说明
+更新学习的unit/state:0失败1成功2开始学习 
+ isLasteUnit:0不是1是 
+wordNum 当前单元的单词个数
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*appUserId*\\ \\ _可选_||appUserId||integer (int64)|
+|*Query*|*bookId*\\ \\ _可选_||bookId||integer (int64)|
+|*Query*|*isLastUnit*\\ \\ _可选_||isLastUnit||integer (int32)|
+|*Query*|*lastWordIds*\\ \\ _可选_||lastWordIds||string|
+|*Query*|*leftWords*\\ \\ _可选_||leftWords||string|
+|*Query*|*nextLearnStage*\\ \\ _可选_||nextLearnStage||integer (int32)|
+|*Query*|*stageIds*\\ \\ _可选_||stageIds||string|
+|*Query*|*state*\\ \\ _可选_||state||integer (int32)|
+|*Query*|*unitId*\\ \\ _可选_||unitId||integer (int64)|
+|*Query*|*wordNum*\\ \\ _可选_||wordNum||integer (int32)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/updatePersonalLearnUnitState
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "appUserId" : 0,
+  "bookId" : 0,
+  "isLastUnit" : 0,
+  "lastWordIds" : "string",
+  "leftWords" : "string",
+  "nextLearnStage" : 0,
+  "stageIds" : "string",
+  "state" : 0,
+  "unitId" : 0,
+  "wordNum" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+h4. 上传个人有效的学习时间 {anchor:uploadlearntimeusingpost}
+{noformat}
+POST /userwordLearn/uploadLearnTime
+{noformat}
+
+
+h5. 说明
+上传个人有效的学习时间
+
+
+h5. 参数
+
+||类型||名称||说明||类型||
+|*Query*|*time*\\ \\ _可选_||time||integer (int64)|
+|*Query*|*userId*\\ \\ _可选_||userId||integer (int64)|
+
+
+h5. 响应
+
+||HTTP代码||说明||类型||
+|*200*||OK||[ApiResult|#apiresult]|
+|*201*||Created||无内容|
+|*401*||Unauthorized||无内容|
+|*403*||Forbidden||无内容|
+|*404*||Not Found||无内容|
+
+
+h5. 消耗
+
+* {noformat}application/json{noformat}
+
+
+h5. 生成
+
+* {noformat}*/*{noformat}
+
+
+h5. HTTP请求示例
+
+h6. 请求 path
+{code}
+/userwordLearn/uploadLearnTime
+{code}
+
+
+h6. 请求 query
+{code:language=json}
+{
+  "time" : 0,
+  "userId" : 0
+}
+{code}
+
+
+h5. HTTP响应示例
+
+h6. 响应 200
+{code:language=json}
+{
+  "data" : "object",
+  "msg" : "string",
+  "msgCode" : 0
+}
+{code}
+
+
+

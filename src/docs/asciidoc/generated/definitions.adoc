@@ -1,0 +1,1151 @@
+
+[[_definitions]]
+== 定义
+
+[[_agents]]
+=== Agents
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**address** +
+__可选__|**样例** : `"string"`|string
+|**areaId** +
+__可选__|**样例** : `0`|integer (int64)
+|**birthDay** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**cityId** +
+__可选__|**样例** : `0`|integer (int64)
+|**detailAddress** +
+__可选__|**样例** : `"string"`|string
+|**email** +
+__可选__|**样例** : `"string"`|string
+|**headerImgUrl** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**name** +
+__可选__|**样例** : `"string"`|string
+|**phone** +
+__可选__|**样例** : `"string"`|string
+|**provinceId** +
+__可选__|**样例** : `0`|integer (int64)
+|**registerDate** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**sex** +
+__可选__|**样例** : `0`|integer (int32)
+|**user** +
+__可选__|**样例** : `"<<_user>>"`|<<_user,User>>
+|===
+
+
+[[_apiresult]]
+=== ApiResult
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**data** +
+__可选__|**样例** : `"object"`|object
+|**msg** +
+__可选__|**样例** : `"string"`|string
+|**msgCode** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_appuser]]
+=== AppUser
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**address** +
+__可选__|**样例** : `"string"`|string
+|**appUserAccount** +
+__可选__|**样例** : `"<<_appuseraccount>>"`|<<_appuseraccount,AppUserAccount>>
+|**areaId** +
+__可选__|**样例** : `0`|integer (int64)
+|**benginStartTime** +
+__可选__|**样例** : `"string"`|string
+|**birthDay** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**booksCount** +
+__可选__|**样例** : `0`|integer (int32)
+|**cityId** +
+__可选__|**样例** : `0`|integer (int64)
+|**classInSchool** +
+__可选__|**样例** : `"<<_classinschool>>"`|<<_classinschool,ClassInSchool>>
+|**classInSchoolId** +
+__可选__|**样例** : `0`|integer (int64)
+|**hasCompeltedInfo** +
+__可选__|**样例** : `true`|boolean
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**imgUrl** +
+__可选__|**样例** : `"string"`|string
+|**isBatchCreate** +
+__可选__|**样例** : `0`|integer (int32)
+|**lastSignTime** +
+__可选__|**样例** : `"string"`|string
+|**learnBookWords** +
+__可选__|**样例** : `"string"`|string
+|**learnTime** +
+__可选__|**样例** : `0`|integer (int64)
+|**level** +
+__可选__|**样例** : `"string"`|string
+|**name** +
+__可选__|**样例** : `"string"`|string
+|**newWordNum** +
+__可选__|**样例** : `0`|integer (int64)
+|**number1** +
+__可选__|**样例** : `"string"`|string
+|**number2** +
+__可选__|**样例** : `"string"`|string
+|**pass64** +
+__可选__|**样例** : `"string"`|string
+|**password** +
+__可选__|**样例** : `"string"`|string
+|**phoneForInfo** +
+__可选__|**样例** : `"string"`|string
+|**phoneNum** +
+__可选__|**样例** : `"string"`|string
+|**provinceId** +
+__可选__|**样例** : `0`|integer (int64)
+|**punchCardsDays** +
+__可选__|**样例** : `0`|integer (int32)
+|**qqNickName** +
+__可选__|**样例** : `"string"`|string
+|**qqNumber** +
+__可选__|**样例** : `"string"`|string
+|**qqOpenId** +
+__可选__|**样例** : `"string"`|string
+|**realNameForInfo** +
+__可选__|**样例** : `"string"`|string
+|**registerDate** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**schoolId** +
+__可选__|**样例** : `"string"`|string
+|**schoolName** +
+__可选__|**样例** : `"string"`|string
+|**sex** +
+__可选__|**样例** : `0`|integer (int32)
+|**sign** +
+__可选__|**样例** : `"string"`|string
+|**standardDay** +
+__可选__|**样例** : `0`|integer (int64)
+|**teacher** +
+__可选__|**样例** : `"string"`|string
+|**thirdImgUrl** +
+__可选__|**样例** : `"string"`|string
+|**thirdNickName** +
+__可选__|**样例** : `"string"`|string
+|**todayStudyTime** +
+__可选__|**样例** : `"string"`|string
+|**totalNewOnlineTime** +
+__可选__|**样例** : `"string"`|string
+|**totalNewVolidTime** +
+__可选__|**样例** : `"string"`|string
+|**totalStudyTime** +
+__可选__|**样例** : `"string"`|string
+|**uid** +
+__可选__|**样例** : `"string"`|string
+|**wechatNickName** +
+__可选__|**样例** : `"string"`|string
+|**wechatNum** +
+__可选__|**样例** : `"string"`|string
+|**wechatOpenId** +
+__可选__|**样例** : `"string"`|string
+|**weiboNickName** +
+__可选__|**样例** : `"string"`|string
+|**weiboNumber** +
+__可选__|**样例** : `"string"`|string
+|**weiboOpenId** +
+__可选__|**样例** : `"string"`|string
+|**wordNum** +
+__可选__|**样例** : `0`|integer (int64)
+|**wordsNumReview** +
+__可选__|**样例** : `0`|integer (int64)
+|===
+
+
+[[_appuseraccount]]
+=== AppUserAccount
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**accumulatePoints** +
+__可选__|**样例** : `0`|integer (int64)
+|**goldCoins** +
+__可选__|**样例** : `0`|integer (int32)
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|===
+
+
+[[_appuserorder]]
+=== AppUserOrder
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**appUserAccount** +
+__可选__|**样例** : `"<<_appuseraccount>>"`|<<_appuseraccount,AppUserAccount>>
+|**changeNum** +
+__可选__|**样例** : `0`|integer (int32)
+|**createDate** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**des** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**personalLearnBook** +
+__可选__|**样例** : `"<<_personallearnbook>>"`|<<_personallearnbook,PersonalLearnBook>>
+|**redeemCode** +
+__可选__|**样例** : `"<<_redeemcode>>"`|<<_redeemcode,RedeemCode>>
+|**relatedId** +
+__可选__|**样例** : `0`|integer (int64)
+|**title** +
+__可选__|**样例** : `"string"`|string
+|**type** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_appusershowinfobean]]
+=== AppUserShowInfoBean
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**bookTestInfos** +
+__可选__|**样例** : `[ "<<_booktestinfo>>" ]`|< <<_booktestinfo,BookTestInfo>> > array
+|**books** +
+__可选__|**样例** : `{
+  "string" : "string"
+}`|< string, string > map
+|**classId** +
+__可选__|**样例** : `0`|integer (int64)
+|**className** +
+__可选__|**样例** : `"string"`|string
+|**countBooks** +
+__可选__|**样例** : `0`|integer (int64)
+|**currentBookName** +
+__可选__|**样例** : `"string"`|string
+|**currentUnit** +
+__可选__|**样例** : `"string"`|string
+|**currentWord** +
+__可选__|**样例** : `"string"`|string
+|**currentWordName** +
+__可选__|**样例** : `"string"`|string
+|**progress** +
+__可选__|**样例** : `"string"`|string
+|**schoolId** +
+__可选__|**样例** : `0`|integer (int64)
+|**schoolName** +
+__可选__|**样例** : `"string"`|string
+|**theLatesdScore** +
+__可选__|**样例** : `0`|integer (int32)
+|**unitTestInfos** +
+__可选__|**样例** : `[ "<<_unittestinfo>>" ]`|< <<_unittestinfo,UnitTestInfo>> > array
+|**userId** +
+__可选__|**样例** : `0`|integer (int64)
+|**userName** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+[[_booktestinfo]]
+=== BookTestInfo
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**bookId** +
+__可选__|**样例** : `0`|integer (int64)
+|**bookName** +
+__可选__|**样例** : `"string"`|string
+|**isPre** +
+__可选__|**样例** : `0`|integer (int32)
+|**score** +
+__可选__|**样例** : `0`|integer (int32)
+|**testDate** +
+__可选__|**样例** : `"string"`|string (date-time)
+|===
+
+
+[[_bookunit]]
+=== BookUnit
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**learnBook** +
+__可选__|**样例** : `"<<_learnbook>>"`|<<_learnbook,LearnBook>>
+|**name** +
+__可选__|**样例** : `"string"`|string
+|**passTime** +
+__可选__|**样例** : `"string"`|string
+|**testScore** +
+__可选__|**样例** : `0`|integer (int32)
+|**testTime** +
+__可选__|**样例** : `"string"`|string
+|**unitTestStart** +
+__可选__|**样例** : `"string"`|string
+|**unitTypeNumber1** +
+__可选__|**样例** : `"string"`|string
+|**unitTypeNumber2** +
+__可选__|**样例** : `"string"`|string
+|**unitTypeNumber4** +
+__可选__|**样例** : `"string"`|string
+|**unitTypeNumber5** +
+__可选__|**样例** : `"string"`|string
+|**unitTypeNumber6** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+[[_bookword]]
+=== BookWord
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**aboutWords** +
+__可选__|**样例** : `"string"`|string
+|**assistantNotation** +
+__可选__|**样例** : `"string"`|string
+|**bookName** +
+__可选__|**样例** : `"string"`|string
+|**englishExample1** +
+__可选__|**样例** : `"string"`|string
+|**englishExample2** +
+__可选__|**样例** : `"string"`|string
+|**exampleTranslation1** +
+__可选__|**样例** : `"string"`|string
+|**exampleTranslation2** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**interpretation** +
+__可选__|**样例** : `"string"`|string
+|**is_right** +
+__可选__|**样例** : `true`|boolean
+|**learnBook** +
+__可选__|**样例** : `"<<_learnbook>>"`|<<_learnbook,LearnBook>>
+|**right** +
+__可选__|**样例** : `true`|boolean
+|**rootAffixes** +
+__可选__|**样例** : `"string"`|string
+|**spare1** +
+__可选__|**样例** : `"string"`|string
+|**spare2** +
+__可选__|**样例** : `"string"`|string
+|**stage** +
+__可选__|**样例** : `"string"`|string
+|**unit** +
+__可选__|**样例** : `"<<_bookunit>>"`|<<_bookunit,BookUnit>>
+|**unitName** +
+__可选__|**样例** : `"string"`|string
+|**version** +
+__可选__|**样例** : `"string"`|string
+|**word** +
+__可选__|**样例** : `"<<_word>>"`|<<_word,Word>>
+|**wordName** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+[[_classinschool]]
+=== ClassInSchool
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**LAY_CHECKED** +
+__可选__|**样例** : `true`|boolean
+|**addUser** +
+__可选__|**样例** : `"<<_user>>"`|<<_user,User>>
+|**classInfo** +
+__可选__|**样例** : `"string"`|string
+|**createTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**headMaster** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**lay_CHECKED** +
+__可选__|**样例** : `true`|boolean
+|**name** +
+__可选__|**样例** : `"string"`|string
+|**school** +
+__可选__|**样例** : `"<<_school>>"`|<<_school,School>>
+|**studentNum** +
+__可选__|**样例** : `0`|integer (int32)
+|**withInSevenNUm** +
+__可选__|**样例** : `0`|integer (int32)
+|**withInTwoNum** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_errorrecovery]]
+=== ErrorRecovery
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**appUser** +
+__可选__|**样例** : `"<<_appuser>>"`|<<_appuser,AppUser>>
+|**bookWord** +
+__可选__|**样例** : `"<<_bookword>>"`|<<_bookword,BookWord>>
+|**createTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**des** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**imgUrl** +
+__可选__|**样例** : `"string"`|string
+|**isResolved** +
+__可选__|**样例** : `0`|integer (int32)
+|**reply** +
+__可选__|**样例** : `"string"`|string
+|**resolvedTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**user** +
+__可选__|**样例** : `"<<_user>>"`|<<_user,User>>
+|===
+
+
+[[_feedback]]
+=== FeedBack
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**answerContent** +
+__可选__|**样例** : `"string"`|string
+|**answerTiem** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**answerUser** +
+__可选__|**样例** : `"<<_user>>"`|<<_user,User>>
+|**askTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**askUser** +
+__可选__|**样例** : `"<<_appuser>>"`|<<_appuser,AppUser>>
+|**content** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**ifSolve** +
+__可选__|**样例** : `0`|integer (int32)
+|**imageInDbForCacheList** +
+__可选__|**样例** : `[ "<<_imageindbforcache>>" ]`|< <<_imageindbforcache,ImageInDbForCache>> > array
+|===
+
+
+[[_file]]
+=== File
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**absolute** +
+__可选__|**样例** : `true`|boolean
+|**absoluteFile** +
+__可选__|**样例** : `"file"`|file
+|**absolutePath** +
+__可选__|**样例** : `"string"`|string
+|**canonicalFile** +
+__可选__|**样例** : `"file"`|file
+|**canonicalPath** +
+__可选__|**样例** : `"string"`|string
+|**directory** +
+__可选__|**样例** : `true`|boolean
+|**file** +
+__可选__|**样例** : `true`|boolean
+|**freeSpace** +
+__可选__|**样例** : `0`|integer (int64)
+|**hidden** +
+__可选__|**样例** : `true`|boolean
+|**name** +
+__可选__|**样例** : `"string"`|string
+|**parent** +
+__可选__|**样例** : `"string"`|string
+|**parentFile** +
+__可选__|**样例** : `"file"`|file
+|**path** +
+__可选__|**样例** : `"string"`|string
+|**totalSpace** +
+__可选__|**样例** : `0`|integer (int64)
+|**usableSpace** +
+__可选__|**样例** : `0`|integer (int64)
+|===
+
+
+[[_filesystemresource]]
+=== FileSystemResource
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**description** +
+__可选__|**样例** : `"string"`|string
+|**file** +
+__可选__|**样例** : `"file"`|file
+|**filename** +
+__可选__|**样例** : `"string"`|string
+|**inputStream** +
+__可选__|**样例** : `"<<_inputstream>>"`|<<_inputstream,InputStream>>
+|**open** +
+__可选__|**样例** : `true`|boolean
+|**outputStream** +
+__可选__|**样例** : `"<<_outputstream>>"`|<<_outputstream,OutputStream>>
+|**path** +
+__可选__|**样例** : `"string"`|string
+|**readable** +
+__可选__|**样例** : `true`|boolean
+|**uri** +
+__可选__|**样例** : `"<<_uri>>"`|<<_uri,URI>>
+|**url** +
+__可选__|**样例** : `"<<_url>>"`|<<_url,URL>>
+|**writable** +
+__可选__|**样例** : `true`|boolean
+|===
+
+
+[[_goodteaches]]
+=== GoodTeaches
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**imgUrl** +
+__可选__|**样例** : `"string"`|string
+|**isBought** +
+__可选__|**样例** : `0`|integer (int32)
+|**score** +
+__可选__|**样例** : `0.0`|number (double)
+|**teacherDes** +
+__可选__|**样例** : `"string"`|string
+|**teacherName** +
+__可选__|**样例** : `"string"`|string
+|**title** +
+__可选__|**样例** : `"string"`|string
+|**url** +
+__可选__|**样例** : `"string"`|string
+|**wathNum** +
+__可选__|**样例** : `0`|integer (int64)
+|===
+
+
+[[_imageindbforcache]]
+=== ImageInDbForCache
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**createDate** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**imgName** +
+__可选__|**样例** : `"string"`|string
+|**imgUrl** +
+__可选__|**样例** : `"string"`|string
+|**size** +
+__可选__|**样例** : `0`|integer (int64)
+|===
+
+
+[[_inputstream]]
+=== InputStream
+__类型__ : object
+
+
+[[_64208abcc996c5e1c6ddd01700043576]]
+=== LayPageResult«AppUserShowInfoBean»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**code** +
+__可选__|**样例** : `0`|integer (int32)
+|**count** +
+__可选__|**样例** : `0`|integer (int64)
+|**data** +
+__可选__|**样例** : `[ "<<_appusershowinfobean>>" ]`|< <<_appusershowinfobean,AppUserShowInfoBean>> > array
+|**msg** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+[[_learnbook]]
+=== LearnBook
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**bookName** +
+__可选__|**样例** : `"string"`|string
+|**createTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**downLoadNum** +
+__可选__|**样例** : `0`|integer (int64)
+|**download** +
+__可选__|**样例** : `0`|integer (int32)
+|**grade** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**imgUrl** +
+__可选__|**样例** : `"string"`|string
+|**price** +
+__可选__|**样例** : `0`|integer (int32)
+|**stage** +
+__可选__|**样例** : `"string"`|string
+|**updateTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**version** +
+__可选__|**样例** : `"string"`|string
+|**wordsNum** +
+__可选__|**样例** : `0`|integer (int64)
+|===
+
+
+[[_message]]
+=== Message
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**classInSchool** +
+__可选__|**样例** : `"<<_classinschool>>"`|<<_classinschool,ClassInSchool>>
+|**createDate** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**msgContent** +
+__可选__|**样例** : `"string"`|string
+|**msgType** +
+__可选__|**样例** : `0`|integer (int32)
+|**pushState** +
+__可选__|**样例** : `0`|integer (int32)
+|**relatedId** +
+__可选__|**样例** : `0`|integer (int64)
+|**sendUser** +
+__可选__|**样例** : `"<<_user>>"`|<<_user,User>>
+|**title** +
+__可选__|**样例** : `"string"`|string
+|**url** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+[[_messageread]]
+=== MessageRead
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**appUser** +
+__可选__|**样例** : `"<<_appuser>>"`|<<_appuser,AppUser>>
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**message** +
+__可选__|**样例** : `"<<_message>>"`|<<_message,Message>>
+|**state** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_outputstream]]
+=== OutputStream
+__类型__ : object
+
+
+[[_pageapiresult]]
+=== PageApiResult
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**allCount** +
+__可选__|**样例** : `0`|integer (int64)
+|**currentPage** +
+__可选__|**样例** : `0`|integer (int32)
+|**datas** +
+__可选__|**样例** : `[ "object" ]`|< object > array
+|**msg** +
+__可选__|**样例** : `"string"`|string
+|**msgCode** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_ddcbc4d95d389c473ed78795180271b6]]
+=== PageApiResult«AppUserOrder»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**allCount** +
+__可选__|**样例** : `0`|integer (int64)
+|**currentPage** +
+__可选__|**样例** : `0`|integer (int32)
+|**datas** +
+__可选__|**样例** : `[ "<<_appuserorder>>" ]`|< <<_appuserorder,AppUserOrder>> > array
+|**msg** +
+__可选__|**样例** : `"string"`|string
+|**msgCode** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_181331583bf47447985b7ae4b1619941]]
+=== PageApiResult«ErrorRecovery»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**allCount** +
+__可选__|**样例** : `0`|integer (int64)
+|**currentPage** +
+__可选__|**样例** : `0`|integer (int32)
+|**datas** +
+__可选__|**样例** : `[ "<<_errorrecovery>>" ]`|< <<_errorrecovery,ErrorRecovery>> > array
+|**msg** +
+__可选__|**样例** : `"string"`|string
+|**msgCode** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_e59783b7b397fc05ce23c7bd8fbd7408]]
+=== PageApiResult«FeedBack»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**allCount** +
+__可选__|**样例** : `0`|integer (int64)
+|**currentPage** +
+__可选__|**样例** : `0`|integer (int32)
+|**datas** +
+__可选__|**样例** : `[ "<<_feedback>>" ]`|< <<_feedback,FeedBack>> > array
+|**msg** +
+__可选__|**样例** : `"string"`|string
+|**msgCode** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_5bd4ad597fc3b695376bfa5c1379c739]]
+=== PageApiResult«GoodTeaches»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**allCount** +
+__可选__|**样例** : `0`|integer (int64)
+|**currentPage** +
+__可选__|**样例** : `0`|integer (int32)
+|**datas** +
+__可选__|**样例** : `[ "<<_goodteaches>>" ]`|< <<_goodteaches,GoodTeaches>> > array
+|**msg** +
+__可选__|**样例** : `"string"`|string
+|**msgCode** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_5c0d4c33855dfb66d81aad86b9bfe6bd]]
+=== PageApiResult«MessageRead»
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**allCount** +
+__可选__|**样例** : `0`|integer (int64)
+|**currentPage** +
+__可选__|**样例** : `0`|integer (int32)
+|**datas** +
+__可选__|**样例** : `[ "<<_messageread>>" ]`|< <<_messageread,MessageRead>> > array
+|**msg** +
+__可选__|**样例** : `"string"`|string
+|**msgCode** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_permission]]
+=== Permission
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**LAY_CHECKED** +
+__可选__|**样例** : `true`|boolean
+|**dataPath** +
+__可选__|**样例** : `"string"`|string
+|**hasChild** +
+__可选__|**样例** : `0`|integer (int32)
+|**icon** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**lay_CHECKED** +
+__可选__|**样例** : `true`|boolean
+|**menuId** +
+__可选__|**样例** : `0`|integer (int32)
+|**parentId** +
+__可选__|**样例** : `0`|integer (int64)
+|**permissonName** +
+__可选__|**样例** : `"string"`|string
+|**powerList** +
+__可选__|**样例** : `[ "<<_permission>>" ]`|< <<_permission,Permission>> > array
+|**powerMenuName** +
+__可选__|**样例** : `"string"`|string
+|**powerName** +
+__可选__|**样例** : `"string"`|string
+|**powerUrl** +
+__可选__|**样例** : `"string"`|string
+|**roles** +
+__可选__|**样例** : `[ "<<_roles>>" ]`|< <<_roles,Roles>> > array
+|===
+
+
+[[_personallearnbook]]
+=== PersonalLearnBook
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**appUserNumber** +
+__可选__|**样例** : `0`|integer (int32)
+|**boughtTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**buy** +
+__可选__|**样例** : `true`|boolean
+|**currentLeftWords** +
+__可选__|**样例** : `"string"`|string
+|**currentUnitFinished** +
+__可选__|**样例** : `true`|boolean
+|**currentUnitName** +
+__可选__|**样例** : `"string"`|string
+|**currentWord** +
+__可选__|**样例** : `0`|integer (int64)
+|**currentWordNum** +
+__可选__|**样例** : `0`|integer (int64)
+|**currnetWordname** +
+__可选__|**样例** : `"string"`|string
+|**extractPoints** +
+__可选__|**样例** : `"string"`|string
+|**freeBoughtTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**isCurrentBook** +
+__可选__|**样例** : `0`|integer (int32)
+|**isFinished** +
+__可选__|**样例** : `0`|integer (int32)
+|**isPassed** +
+__可选__|**样例** : `0`|integer (int32)
+|**isPreTested** +
+__可选__|**样例** : `0`|integer (int32)
+|**lastTestTime** +
+__可选__|**样例** : `"string"`|string
+|**learnAfterScore** +
+__可选__|**样例** : `"string"`|string
+|**learnBeforeScore** +
+__可选__|**样例** : `"string"`|string
+|**learnBook** +
+__可选__|**样例** : `"<<_learnbook>>"`|<<_learnbook,LearnBook>>
+|**learnedWords** +
+__可选__|**样例** : `"string"`|string
+|**preScore** +
+__可选__|**样例** : `0`|integer (int32)
+|**score** +
+__可选__|**样例** : `0`|integer (int32)
+|**teacherSuggest** +
+__可选__|**样例** : `"string"`|string
+|**totalWordNum** +
+__可选__|**样例** : `0`|integer (int64)
+|**unitId** +
+__可选__|**样例** : `0`|integer (int64)
+|**unitWordProgress** +
+__可选__|**样例** : `0`|integer (int64)
+|**valiable** +
+__可选__|**样例** : `true`|boolean
+|===
+
+
+[[_redeemcode]]
+=== RedeemCode
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**activeTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**codeMoney** +
+__可选__|**样例** : `0`|integer (int32)
+|**codeNum** +
+__可选__|**样例** : `"string"`|string
+|**createTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**des** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**school** +
+__可选__|**样例** : `"<<_school>>"`|<<_school,School>>
+|**state** +
+__可选__|**样例** : `0`|integer (int32)
+|**termOfvalidity** +
+__可选__|**样例** : `0`|integer (int32)
+|**timeOut** +
+__可选__|**样例** : `true`|boolean
+|**upLoadUser** +
+__可选__|**样例** : `"<<_user>>"`|<<_user,User>>
+|**user** +
+__可选__|**样例** : `"<<_appuser>>"`|<<_appuser,AppUser>>
+|===
+
+
+[[_roles]]
+=== Roles
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**permissionIds** +
+__可选__|**样例** : `"string"`|string
+|**permissions** +
+__可选__|**样例** : `[ "<<_permission>>" ]`|< <<_permission,Permission>> > array
+|**roleName** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+[[_school]]
+=== School
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**LAY_CHECKED** +
+__可选__|**样例** : `true`|boolean
+|**address** +
+__可选__|**样例** : `"string"`|string
+|**agents** +
+__可选__|**样例** : `"<<_agents>>"`|<<_agents,Agents>>
+|**areaId** +
+__可选__|**样例** : `0`|integer (int64)
+|**city** +
+__可选__|**样例** : `"string"`|string
+|**cityId** +
+__可选__|**样例** : `0`|integer (int64)
+|**createTime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**detailAddress** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**lay_CHECKED** +
+__可选__|**样例** : `true`|boolean
+|**masterId** +
+__可选__|**样例** : `0`|integer (int64)
+|**mastername** +
+__可选__|**样例** : `"string"`|string
+|**name** +
+__可选__|**样例** : `"string"`|string
+|**phone** +
+__可选__|**样例** : `"string"`|string
+|**province** +
+__可选__|**样例** : `"string"`|string
+|**provinceId** +
+__可选__|**样例** : `0`|integer (int64)
+|**seven** +
+__可选__|**样例** : `0`|integer (int32)
+|**shcoolDes** +
+__可选__|**样例** : `"string"`|string
+|**thirty** +
+__可选__|**样例** : `0`|integer (int32)
+|**uid** +
+__可选__|**样例** : `"string"`|string
+|**userNumber** +
+__可选__|**样例** : `0`|integer (int32)
+|===
+
+
+[[_uri]]
+=== URI
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**absolute** +
+__可选__|**样例** : `true`|boolean
+|**authority** +
+__可选__|**样例** : `"string"`|string
+|**fragment** +
+__可选__|**样例** : `"string"`|string
+|**host** +
+__可选__|**样例** : `"string"`|string
+|**opaque** +
+__可选__|**样例** : `true`|boolean
+|**path** +
+__可选__|**样例** : `"string"`|string
+|**port** +
+__可选__|**样例** : `0`|integer (int32)
+|**query** +
+__可选__|**样例** : `"string"`|string
+|**rawAuthority** +
+__可选__|**样例** : `"string"`|string
+|**rawFragment** +
+__可选__|**样例** : `"string"`|string
+|**rawPath** +
+__可选__|**样例** : `"string"`|string
+|**rawQuery** +
+__可选__|**样例** : `"string"`|string
+|**rawSchemeSpecificPart** +
+__可选__|**样例** : `"string"`|string
+|**rawUserInfo** +
+__可选__|**样例** : `"string"`|string
+|**scheme** +
+__可选__|**样例** : `"string"`|string
+|**schemeSpecificPart** +
+__可选__|**样例** : `"string"`|string
+|**userInfo** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+[[_url]]
+=== URL
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**authority** +
+__可选__|**样例** : `"string"`|string
+|**content** +
+__可选__|**样例** : `"object"`|object
+|**defaultPort** +
+__可选__|**样例** : `0`|integer (int32)
+|**file** +
+__可选__|**样例** : `"string"`|string
+|**host** +
+__可选__|**样例** : `"string"`|string
+|**path** +
+__可选__|**样例** : `"string"`|string
+|**port** +
+__可选__|**样例** : `0`|integer (int32)
+|**protocol** +
+__可选__|**样例** : `"string"`|string
+|**query** +
+__可选__|**样例** : `"string"`|string
+|**ref** +
+__可选__|**样例** : `"string"`|string
+|**userInfo** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+[[_unittestinfo]]
+=== UnitTestInfo
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**isPre** +
+__可选__|**样例** : `0`|integer (int32)
+|**score** +
+__可选__|**样例** : `0`|integer (int32)
+|**testtime** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**unitName** +
+__可选__|**样例** : `"string"`|string
+|**unitid** +
+__可选__|**样例** : `0`|integer (int64)
+|===
+
+
+[[_user]]
+=== User
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**createTiem** +
+__可选__|**样例** : `"string"`|string (date-time)
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**loginName** +
+__可选__|**样例** : `"string"`|string
+|**name** +
+__可选__|**样例** : `"string"`|string
+|**passWord** +
+__可选__|**样例** : `"string"`|string
+|**roles** +
+__可选__|**样例** : `[ "<<_roles>>" ]`|< <<_roles,Roles>> > array
+|**rolesIds** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+[[_word]]
+=== Word
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|名称|说明|类型
+|**aboutWords** +
+__可选__|**样例** : `"string"`|string
+|**americanPronunciation** +
+__可选__|**样例** : `"string"`|string
+|**assistantNotation** +
+__可选__|**样例** : `"string"`|string
+|**englishExample1** +
+__可选__|**样例** : `"string"`|string
+|**englishExample2** +
+__可选__|**样例** : `"string"`|string
+|**englishPronunciation** +
+__可选__|**样例** : `"string"`|string
+|**exampleTranslation1** +
+__可选__|**样例** : `"string"`|string
+|**exampleTranslation2** +
+__可选__|**样例** : `"string"`|string
+|**id** +
+__可选__|**样例** : `0`|integer (int64)
+|**interpretation** +
+__可选__|**样例** : `"string"`|string
+|**phonetic_symbol** +
+__可选__|**样例** : `"string"`|string
+|**rootAffixes** +
+__可选__|**样例** : `"string"`|string
+|**spare1** +
+__可选__|**样例** : `"string"`|string
+|**spare2** +
+__可选__|**样例** : `"string"`|string
+|**syllabification** +
+__可选__|**样例** : `"string"`|string
+|**usaAudioUrl** +
+__可选__|**样例** : `"string"`|string
+|**word** +
+__可选__|**样例** : `"string"`|string
+|**wordAudioUrl** +
+__可选__|**样例** : `"string"`|string
+|===
+
+
+

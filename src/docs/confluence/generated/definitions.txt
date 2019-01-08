@@ -1,0 +1,597 @@
+
+h2. 定义 {anchor:definitions}
+
+h3. Agents {anchor:agents}
+
+||名称||说明||类型||
+|*address*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*areaId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*birthDay*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*cityId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*detailAddress*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*email*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*headerImgUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*name*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*phone*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*provinceId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*registerDate*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*sex*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*user*\\ \\ _可选_||*样例* : {noformat}"[#user]"{noformat}||[User|#user]|
+
+
+h3. ApiResult {anchor:apiresult}
+
+||名称||说明||类型||
+|*data*\\ \\ _可选_||*样例* : {noformat}"object"{noformat}||object|
+|*msg*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*msgCode*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. AppUser {anchor:appuser}
+
+||名称||说明||类型||
+|*address*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*appUserAccount*\\ \\ _可选_||*样例* : {noformat}"[#appuseraccount]"{noformat}||[AppUserAccount|#appuseraccount]|
+|*areaId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*benginStartTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*birthDay*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*booksCount*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*cityId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*classInSchool*\\ \\ _可选_||*样例* : {noformat}"[#classinschool]"{noformat}||[ClassInSchool|#classinschool]|
+|*classInSchoolId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*hasCompeltedInfo*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*imgUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*isBatchCreate*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*lastSignTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*learnBookWords*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*learnTime*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*level*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*name*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*newWordNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*number1*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*number2*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*pass64*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*password*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*phoneForInfo*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*phoneNum*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*provinceId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*punchCardsDays*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*qqNickName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*qqNumber*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*qqOpenId*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*realNameForInfo*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*registerDate*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*schoolId*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*schoolName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*sex*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*sign*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*standardDay*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*teacher*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*thirdImgUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*thirdNickName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*todayStudyTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*totalNewOnlineTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*totalNewVolidTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*totalStudyTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*uid*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*wechatNickName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*wechatNum*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*wechatOpenId*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*weiboNickName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*weiboNumber*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*weiboOpenId*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*wordNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*wordsNumReview*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+
+
+h3. AppUserAccount {anchor:appuseraccount}
+
+||名称||说明||类型||
+|*accumulatePoints*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*goldCoins*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+
+
+h3. AppUserOrder {anchor:appuserorder}
+
+||名称||说明||类型||
+|*appUserAccount*\\ \\ _可选_||*样例* : {noformat}"[#appuseraccount]"{noformat}||[AppUserAccount|#appuseraccount]|
+|*changeNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*createDate*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*des*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*personalLearnBook*\\ \\ _可选_||*样例* : {noformat}"[#personallearnbook]"{noformat}||[PersonalLearnBook|#personallearnbook]|
+|*redeemCode*\\ \\ _可选_||*样例* : {noformat}"[#redeemcode]"{noformat}||[RedeemCode|#redeemcode]|
+|*relatedId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*title*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*type*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. AppUserShowInfoBean {anchor:appusershowinfobean}
+
+||名称||说明||类型||
+|*bookTestInfos*\\ \\ _可选_||*样例* : {noformat}[ "[#booktestinfo]" ]{noformat}||< [BookTestInfo|#booktestinfo] > array|
+|*books*\\ \\ _可选_||*样例* : {noformat}{\\   "string" : "string"\\ }{noformat}||< string, string > map|
+|*classId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*className*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*countBooks*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*currentBookName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*currentUnit*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*currentWord*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*currentWordName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*progress*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*schoolId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*schoolName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*theLatesdScore*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*unitTestInfos*\\ \\ _可选_||*样例* : {noformat}[ "[#unittestinfo]" ]{noformat}||< [UnitTestInfo|#unittestinfo] > array|
+|*userId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*userName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. BookTestInfo {anchor:booktestinfo}
+
+||名称||说明||类型||
+|*bookId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*bookName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*isPre*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*score*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*testDate*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+
+
+h3. BookUnit {anchor:bookunit}
+
+||名称||说明||类型||
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*learnBook*\\ \\ _可选_||*样例* : {noformat}"[#learnbook]"{noformat}||[LearnBook|#learnbook]|
+|*name*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*passTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*testScore*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*testTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*unitTestStart*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*unitTypeNumber1*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*unitTypeNumber2*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*unitTypeNumber4*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*unitTypeNumber5*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*unitTypeNumber6*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. BookWord {anchor:bookword}
+
+||名称||说明||类型||
+|*aboutWords*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*assistantNotation*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*bookName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*englishExample1*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*englishExample2*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*exampleTranslation1*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*exampleTranslation2*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*interpretation*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*is_right*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*learnBook*\\ \\ _可选_||*样例* : {noformat}"[#learnbook]"{noformat}||[LearnBook|#learnbook]|
+|*right*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*rootAffixes*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*spare1*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*spare2*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*stage*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*unit*\\ \\ _可选_||*样例* : {noformat}"[#bookunit]"{noformat}||[BookUnit|#bookunit]|
+|*unitName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*version*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*word*\\ \\ _可选_||*样例* : {noformat}"[#word]"{noformat}||[Word|#word]|
+|*wordName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. ClassInSchool {anchor:classinschool}
+
+||名称||说明||类型||
+|*LAY_CHECKED*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*addUser*\\ \\ _可选_||*样例* : {noformat}"[#user]"{noformat}||[User|#user]|
+|*classInfo*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*createTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*headMaster*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*lay_CHECKED*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*name*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*school*\\ \\ _可选_||*样例* : {noformat}"[#school]"{noformat}||[School|#school]|
+|*studentNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*withInSevenNUm*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*withInTwoNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. ErrorRecovery {anchor:errorrecovery}
+
+||名称||说明||类型||
+|*appUser*\\ \\ _可选_||*样例* : {noformat}"[#appuser]"{noformat}||[AppUser|#appuser]|
+|*bookWord*\\ \\ _可选_||*样例* : {noformat}"[#bookword]"{noformat}||[BookWord|#bookword]|
+|*createTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*des*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*imgUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*isResolved*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*reply*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*resolvedTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*user*\\ \\ _可选_||*样例* : {noformat}"[#user]"{noformat}||[User|#user]|
+
+
+h3. FeedBack {anchor:feedback}
+
+||名称||说明||类型||
+|*answerContent*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*answerTiem*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*answerUser*\\ \\ _可选_||*样例* : {noformat}"[#user]"{noformat}||[User|#user]|
+|*askTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*askUser*\\ \\ _可选_||*样例* : {noformat}"[#appuser]"{noformat}||[AppUser|#appuser]|
+|*content*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*ifSolve*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*imageInDbForCacheList*\\ \\ _可选_||*样例* : {noformat}[ "[#imageindbforcache]" ]{noformat}||< [ImageInDbForCache|#imageindbforcache] > array|
+
+
+h3. File {anchor:file}
+
+||名称||说明||类型||
+|*absolute*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*absoluteFile*\\ \\ _可选_||*样例* : {noformat}"file"{noformat}||file|
+|*absolutePath*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*canonicalFile*\\ \\ _可选_||*样例* : {noformat}"file"{noformat}||file|
+|*canonicalPath*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*directory*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*file*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*freeSpace*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*hidden*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*name*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*parent*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*parentFile*\\ \\ _可选_||*样例* : {noformat}"file"{noformat}||file|
+|*path*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*totalSpace*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*usableSpace*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+
+
+h3. FileSystemResource {anchor:filesystemresource}
+
+||名称||说明||类型||
+|*description*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*file*\\ \\ _可选_||*样例* : {noformat}"file"{noformat}||file|
+|*filename*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*inputStream*\\ \\ _可选_||*样例* : {noformat}"[#inputstream]"{noformat}||[InputStream|#inputstream]|
+|*open*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*outputStream*\\ \\ _可选_||*样例* : {noformat}"[#outputstream]"{noformat}||[OutputStream|#outputstream]|
+|*path*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*readable*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*uri*\\ \\ _可选_||*样例* : {noformat}"[#uri]"{noformat}||[URI|#uri]|
+|*url*\\ \\ _可选_||*样例* : {noformat}"[#url]"{noformat}||[URL|#url]|
+|*writable*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+
+
+h3. GoodTeaches {anchor:goodteaches}
+
+||名称||说明||类型||
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*imgUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*isBought*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*score*\\ \\ _可选_||*样例* : {noformat}0.0{noformat}||number (double)|
+|*teacherDes*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*teacherName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*title*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*url*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*wathNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+
+
+h3. ImageInDbForCache {anchor:imageindbforcache}
+
+||名称||说明||类型||
+|*createDate*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*imgName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*imgUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*size*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+
+
+h3. InputStream {anchor:inputstream}
+_类型_ : object
+
+
+h3. LayPageResult«AppUserShowInfoBean» {anchor:64208abcc996c5e1c6ddd01700043576}
+
+||名称||说明||类型||
+|*code*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*count*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*data*\\ \\ _可选_||*样例* : {noformat}[ "[#appusershowinfobean]" ]{noformat}||< [AppUserShowInfoBean|#appusershowinfobean] > array|
+|*msg*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. LearnBook {anchor:learnbook}
+
+||名称||说明||类型||
+|*bookName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*createTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*downLoadNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*download*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*grade*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*imgUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*price*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*stage*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*updateTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*version*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*wordsNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+
+
+h3. Message {anchor:message}
+
+||名称||说明||类型||
+|*classInSchool*\\ \\ _可选_||*样例* : {noformat}"[#classinschool]"{noformat}||[ClassInSchool|#classinschool]|
+|*createDate*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*msgContent*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*msgType*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*pushState*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*relatedId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*sendUser*\\ \\ _可选_||*样例* : {noformat}"[#user]"{noformat}||[User|#user]|
+|*title*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*url*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. MessageRead {anchor:messageread}
+
+||名称||说明||类型||
+|*appUser*\\ \\ _可选_||*样例* : {noformat}"[#appuser]"{noformat}||[AppUser|#appuser]|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*message*\\ \\ _可选_||*样例* : {noformat}"[#message]"{noformat}||[Message|#message]|
+|*state*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. OutputStream {anchor:outputstream}
+_类型_ : object
+
+
+h3. PageApiResult {anchor:pageapiresult}
+
+||名称||说明||类型||
+|*allCount*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*currentPage*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*datas*\\ \\ _可选_||*样例* : {noformat}[ "object" ]{noformat}||< object > array|
+|*msg*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*msgCode*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. PageApiResult«AppUserOrder» {anchor:ddcbc4d95d389c473ed78795180271b6}
+
+||名称||说明||类型||
+|*allCount*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*currentPage*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*datas*\\ \\ _可选_||*样例* : {noformat}[ "[#appuserorder]" ]{noformat}||< [AppUserOrder|#appuserorder] > array|
+|*msg*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*msgCode*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. PageApiResult«ErrorRecovery» {anchor:181331583bf47447985b7ae4b1619941}
+
+||名称||说明||类型||
+|*allCount*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*currentPage*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*datas*\\ \\ _可选_||*样例* : {noformat}[ "[#errorrecovery]" ]{noformat}||< [ErrorRecovery|#errorrecovery] > array|
+|*msg*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*msgCode*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. PageApiResult«FeedBack» {anchor:e59783b7b397fc05ce23c7bd8fbd7408}
+
+||名称||说明||类型||
+|*allCount*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*currentPage*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*datas*\\ \\ _可选_||*样例* : {noformat}[ "[#feedback]" ]{noformat}||< [FeedBack|#feedback] > array|
+|*msg*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*msgCode*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. PageApiResult«GoodTeaches» {anchor:5bd4ad597fc3b695376bfa5c1379c739}
+
+||名称||说明||类型||
+|*allCount*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*currentPage*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*datas*\\ \\ _可选_||*样例* : {noformat}[ "[#goodteaches]" ]{noformat}||< [GoodTeaches|#goodteaches] > array|
+|*msg*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*msgCode*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. PageApiResult«MessageRead» {anchor:5c0d4c33855dfb66d81aad86b9bfe6bd}
+
+||名称||说明||类型||
+|*allCount*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*currentPage*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*datas*\\ \\ _可选_||*样例* : {noformat}[ "[#messageread]" ]{noformat}||< [MessageRead|#messageread] > array|
+|*msg*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*msgCode*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. Permission {anchor:permission}
+
+||名称||说明||类型||
+|*LAY_CHECKED*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*dataPath*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*hasChild*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*icon*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*lay_CHECKED*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*menuId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*parentId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*permissonName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*powerList*\\ \\ _可选_||*样例* : {noformat}[ "[#permission]" ]{noformat}||< [Permission|#permission] > array|
+|*powerMenuName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*powerName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*powerUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*roles*\\ \\ _可选_||*样例* : {noformat}[ "[#roles]" ]{noformat}||< [Roles|#roles] > array|
+
+
+h3. PersonalLearnBook {anchor:personallearnbook}
+
+||名称||说明||类型||
+|*appUserNumber*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*boughtTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*buy*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*currentLeftWords*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*currentUnitFinished*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*currentUnitName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*currentWord*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*currentWordNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*currnetWordname*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*extractPoints*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*freeBoughtTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*isCurrentBook*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*isFinished*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*isPassed*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*isPreTested*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*lastTestTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*learnAfterScore*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*learnBeforeScore*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*learnBook*\\ \\ _可选_||*样例* : {noformat}"[#learnbook]"{noformat}||[LearnBook|#learnbook]|
+|*learnedWords*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*preScore*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*score*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*teacherSuggest*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*totalWordNum*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*unitId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*unitWordProgress*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*valiable*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+
+
+h3. RedeemCode {anchor:redeemcode}
+
+||名称||说明||类型||
+|*activeTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*codeMoney*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*codeNum*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*createTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*des*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*school*\\ \\ _可选_||*样例* : {noformat}"[#school]"{noformat}||[School|#school]|
+|*state*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*termOfvalidity*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*timeOut*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*upLoadUser*\\ \\ _可选_||*样例* : {noformat}"[#user]"{noformat}||[User|#user]|
+|*user*\\ \\ _可选_||*样例* : {noformat}"[#appuser]"{noformat}||[AppUser|#appuser]|
+
+
+h3. Roles {anchor:roles}
+
+||名称||说明||类型||
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*permissionIds*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*permissions*\\ \\ _可选_||*样例* : {noformat}[ "[#permission]" ]{noformat}||< [Permission|#permission] > array|
+|*roleName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. School {anchor:school}
+
+||名称||说明||类型||
+|*LAY_CHECKED*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*address*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*agents*\\ \\ _可选_||*样例* : {noformat}"[#agents]"{noformat}||[Agents|#agents]|
+|*areaId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*city*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*cityId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*createTime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*detailAddress*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*lay_CHECKED*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*masterId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*mastername*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*name*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*phone*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*province*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*provinceId*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*seven*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*shcoolDes*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*thirty*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*uid*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*userNumber*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+
+
+h3. URI {anchor:uri}
+
+||名称||说明||类型||
+|*absolute*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*authority*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*fragment*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*host*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*opaque*\\ \\ _可选_||*样例* : {noformat}true{noformat}||boolean|
+|*path*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*port*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*query*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*rawAuthority*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*rawFragment*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*rawPath*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*rawQuery*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*rawSchemeSpecificPart*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*rawUserInfo*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*scheme*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*schemeSpecificPart*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*userInfo*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. URL {anchor:url}
+
+||名称||说明||类型||
+|*authority*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*content*\\ \\ _可选_||*样例* : {noformat}"object"{noformat}||object|
+|*defaultPort*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*file*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*host*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*path*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*port*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*protocol*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*query*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*ref*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*userInfo*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. UnitTestInfo {anchor:unittestinfo}
+
+||名称||说明||类型||
+|*isPre*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*score*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int32)|
+|*testtime*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*unitName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*unitid*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+
+
+h3. User {anchor:user}
+
+||名称||说明||类型||
+|*createTiem*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string (date-time)|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*loginName*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*name*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*passWord*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*roles*\\ \\ _可选_||*样例* : {noformat}[ "[#roles]" ]{noformat}||< [Roles|#roles] > array|
+|*rolesIds*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+h3. Word {anchor:word}
+
+||名称||说明||类型||
+|*aboutWords*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*americanPronunciation*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*assistantNotation*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*englishExample1*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*englishExample2*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*englishPronunciation*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*exampleTranslation1*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*exampleTranslation2*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*id*\\ \\ _可选_||*样例* : {noformat}0{noformat}||integer (int64)|
+|*interpretation*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*phonetic_symbol*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*rootAffixes*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*spare1*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*spare2*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*syllabification*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*usaAudioUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*word*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+|*wordAudioUrl*\\ \\ _可选_||*样例* : {noformat}"string"{noformat}||string|
+
+
+
